@@ -236,7 +236,7 @@ html {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1800px;
   width: 90%;
   margin: 0 auto;
 }
@@ -487,6 +487,7 @@ header .nav li:last-child a {
 
 .serviceContainer p {
   font-size: 1rem;
+  margin-right: 30px;
 }
 
 .serviceContainer a {
