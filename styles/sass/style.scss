@@ -1,0 +1,34 @@
+@import 'setup';
+@import 'wrapper';
+@import 'variables';
+@import 'typography';
+@import 'main';
+@import 'contact';
+@import 'about';
+
+body {
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+// GENERAL BUTTON
+.button,
+button {
+  background-color: $darkgreen;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: white;
+}

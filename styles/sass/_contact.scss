@@ -1,0 +1,40 @@
+// FORM + MAP
+.formMap .wrapper {
+  display: flex;
+
+  //TEH FORM
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 20px;
+
+    h2 {
+      margin: 0;
+    }
+    
+    input,
+    textarea {
+      padding: 10px 20px;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 40%;
+      font-size: 1.8rem;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border: none;
+    }
+
+    textarea {
+      resize: none;
+    }
+  }
+
+  .map {
+    width: 50%;
+  }
+}
