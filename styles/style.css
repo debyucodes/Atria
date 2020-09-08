@@ -687,6 +687,99 @@ header .nav li:last-child a {
   width: 50%;
 }
 
+.about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .wrapper article {
+  width: 70%;
+  padding-right: 50px;
+  border-right: 2px solid lightgrey;
+}
+
+.about .wrapper article h1 {
+  font-size: 3rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.about .wrapper aside {
+  width: 30%;
+  padding-left: 50px;
+}
+
+.about .wrapper aside h4 {
+  font-size: 2rem;
+}
+
+.about .wrapper aside h5 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.about .wrapper aside p {
+  font-size: 1rem;
+}
+
+.theCircle {
+  border: 40px solid #0B752D;
+  border-radius: 50%;
+  height: 600px;
+  width: 600px;
+  margin: 200px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6eadd;
+  position: relative;
+}
+
+.theCircle h3 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  padding: 0 80px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.theCircle h4 {
+  background: white;
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.theCircle ul {
+  list-style: none;
+  position: relative;
+}
+
+.theCircle ul li {
+  position: absolute;
+}
+
+.theCircle ul .top {
+  color: red;
+  font-size: 1.5rem;
+  bottom: 500px;
+  left: 10px;
+}
+
 body {
   font-size: 62.5%;
 }
