@@ -6,11 +6,13 @@
   form {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin: 0 20px;
+    width: calc(50% - 40px);
+    margin: 80px 20px;
 
     h2 {
-      margin: 0;
+      margin: 30px 0;
+      font-style: normal;
+      font-family: $secondary;
     }
     
     input,
@@ -36,5 +38,38 @@
 
   .map {
     width: 50%;
+    margin-top: 20px;
+  }
+}
+
+// HOURS AND ADDRESS UNDER MAP
+.hours {
+  display: flex;
+  justify-content: space-evenly;
+
+  ul {
+    list-style: none;
+    font-family: $secondary;
+    font-size: 1.3rem;
+    padding: 0;
+    font-weight: 400;
+
+  }
+
+  h4 {
+    font-family: $secondary;
+    font-size: 1.6rem;
+  }
+  
+  div {
+    width: 50%;
+  }
+
+  span {
+    margin-right: 15px;
+  }
+
+  p {
+    font-size: 1.3rem;
   }
 }

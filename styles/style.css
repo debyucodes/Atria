@@ -655,12 +655,14 @@ header .nav li:last-child a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
-  margin: 0 20px;
+  width: calc(50% - 40px);
+  margin: 80px 20px;
 }
 
 .formMap .wrapper form h2 {
-  margin: 0;
+  margin: 30px 0;
+  font-style: normal;
+  font-family: "Open Sans", sans-serif;
 }
 
 .formMap .wrapper form input,
@@ -685,6 +687,41 @@ header .nav li:last-child a {
 
 .formMap .wrapper .map {
   width: 50%;
+  margin-top: 20px;
+}
+
+.hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.hours ul {
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  padding: 0;
+  font-weight: 400;
+}
+
+.hours h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+.hours div {
+  width: 50%;
+}
+
+.hours span {
+  margin-right: 15px;
+}
+
+.hours p {
+  font-size: 1.3rem;
 }
 
 .about .wrapper {
