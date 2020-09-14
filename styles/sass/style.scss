@@ -5,6 +5,7 @@
 @import 'main';
 @import 'contact';
 @import 'about';
+@import 'dermatology';
 
 body {
   font-size: 62.5%;
@@ -23,6 +24,15 @@ button {
   padding: 20px;
   border-radius: 5px;
   color: white;
+}
+
+.secondaryButton {
+  border: 3px solid $darkgreen;
+  border-radius: 30px;
+  color: $darkgreen;
+  position: relative;
+  left: 350px;
+  padding: 10px 20px;
 }
 
 a{

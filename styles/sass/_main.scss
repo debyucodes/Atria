@@ -58,10 +58,6 @@ header {
   margin-right: 60%;
   padding: 40px 0;
 
-  h1 {
-    font-size: 3rem;
-  }
-
   p {
     font-size: 2rem;
   }
@@ -86,14 +82,14 @@ header {
     width: 50%;
   }
 
-  a {
-    border: 3px solid $darkgreen;
-    border-radius: 30px;
-    color: $darkgreen;
-    position: relative;
-    left: 350px;
-    padding: 10px 20px;
-  }
+  // a {
+  //   border: 3px solid $darkgreen;
+  //   border-radius: 30px;
+  //   color: $darkgreen;
+  //   position: relative;
+  //   left: 350px;
+  //   padding: 10px 20px;
+  // }
 
   h2 {
     text-transform: uppercase;

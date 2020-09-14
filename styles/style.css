@@ -241,6 +241,10 @@ html {
   margin: 0 auto;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
 h3 {
   font-size: 2rem;
   text-transform: uppercase;
@@ -336,10 +340,6 @@ header .nav li:last-child a {
   padding: 40px 0;
 }
 
-.heroText h1 {
-  font-size: 3rem;
-}
-
 .heroText p {
   font-size: 2rem;
 }
@@ -364,15 +364,6 @@ header .nav li:last-child a {
 
 .welcome .text {
   width: 50%;
-}
-
-.welcome a {
-  border: 3px solid #0B752D;
-  border-radius: 30px;
-  color: #0B752D;
-  position: relative;
-  left: 350px;
-  padding: 10px 20px;
 }
 
 .welcome h2 {
@@ -817,6 +808,35 @@ header .nav li:last-child a {
   left: 10px;
 }
 
+.dermaHero .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dermaHero .wrapper div:first-child {
+  width: 40%;
+  -webkit-box-shadow: -30px 30px 0 0 #f6eadd;
+          box-shadow: -30px 30px 0 0 #f6eadd;
+  margin: 100px;
+}
+
+.dermaHero .wrapper div:last-child {
+  width: 60%;
+  margin-top: 100px;
+}
+
+.dermaHero .wrapper div:last-child ul {
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+.dermaHero .wrapper h1 {
+  font-family: "Open Sans", sans-serif;
+}
+
 body {
   font-size: 62.5%;
 }
@@ -833,6 +853,15 @@ button {
   padding: 20px;
   border-radius: 5px;
   color: white;
+}
+
+.secondaryButton {
+  border: 3px solid #0B752D;
+  border-radius: 30px;
+  color: #0B752D;
+  position: relative;
+  left: 350px;
+  padding: 10px 20px;
 }
 
 a {
