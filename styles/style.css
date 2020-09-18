@@ -837,6 +837,148 @@ header .nav li:last-child a {
   font-family: "Open Sans", sans-serif;
 }
 
+.orderProgress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  color: grey;
+  font-size: 1.4rem;
+  padding: 20px 0;
+}
+
+.orderProgress span {
+  background: #BF5845;
+  border: 2px solid #D0D0D0;
+  padding: 5px 15px;
+  border-radius: 50%;
+  color: white;
+}
+
+.orderForm {
+  background: #f6eadd;
+  margin: 50px auto;
+  width: 800px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.orderForm h1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.orderForm form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px 100px;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.orderForm label {
+  text-transform: uppercase;
+  margin: 20px 0 10px 0;
+}
+
+.orderForm input,
+.orderForm select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #D0D0D0;
+}
+
+.orderForm button {
+  margin-top: 40px;
+  width: 40%;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.orderDetails {
+  display: none;
+  background: #f6eadd;
+  margin: 50px auto;
+  width: 800px;
+  font-family: "Open Sans", sans-serif;
+  padding: 50px 100px;
+}
+
+.orderDetails h1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.orderDetails p {
+  font-size: 1rem;
+}
+
+.orderDetails button {
+  margin-top: 40px;
+  width: 40%;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+#myFile {
+  font-size: 1.2rem;
+}
+
+.checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1rem;
+}
+
+.checkbox h4 {
+  margin-top: 50px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.checkbox div {
+  padding: 10px 0;
+}
+
+#sendOrder {
+  margin-top: 40px;
+  width: 40%;
+  border: none;
+  cursor: pointer;
+}
+
+.confirmation {
+  display: none;
+  margin: 0 auto;
+  width: 800px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.confirmation h1 {
+  margin-top: 200px;
+}
+
+.confirmation p {
+  margin-bottom: 150px;
+}
+
 body {
   font-size: 62.5%;
 }

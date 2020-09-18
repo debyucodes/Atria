@@ -1,0 +1,133 @@
+// progress bar at the top
+// change colour on js based on progress
+.orderProgress {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  font-family: $secondary;
+  color: grey;
+  font-size: 1.4rem;
+  padding: 20px 0;
+
+  span {
+    background: $orange;
+    border: 2px solid $silver;
+    padding: 5px 15px;
+    border-radius: 50%;
+    color: white;
+  }
+}
+
+// Initial form on first page
+.orderForm {
+  background: $peach;
+  margin: 50px auto;
+  width: 800px;
+  font-family: $secondary;
+
+  h1 {
+    font-weight: 300;
+    font-size: 2.5rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px;
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+
+  label {
+    text-transform: uppercase;
+    margin: 20px 0 10px 0;
+  }
+
+  input,
+  select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid $silver;
+  }
+
+  button {
+    margin-top: 40px;
+    width: 40%;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+}
+
+// Display order details (on second page)
+.orderDetails {
+  display: none;
+  background: $peach;
+  margin: 50px auto;
+  width: 800px;
+  font-family: $secondary;
+  padding: 50px 100px;
+
+  h1 {
+    font-weight: 300;
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  button {
+    margin-top: 40px;
+    width: 40%;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+}
+
+#myFile {
+  font-size: 1.2rem;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+
+  h4 {
+    margin-top: 50px;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  div {
+    padding: 10px 0;
+  }
+}
+
+#sendOrder {
+  margin-top: 40px;
+  width: 40%;
+  border: none;
+  cursor: pointer;
+}
+
+// Display confirmation (third page)
+.confirmation {
+  display: none;
+  margin: 0 auto;
+  width: 800px;
+  font-family: $secondary;
+  text-align: center;
+
+  h1 {
+    margin-top: 200px;
+  }
+
+  p {
+    margin-bottom: 150px;
+  }
+}
+
