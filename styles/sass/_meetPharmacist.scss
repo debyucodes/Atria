@@ -1,0 +1,30 @@
+.meetPharmacist {
+  font-family: $secondary;
+
+  .bio {
+    display: flex;
+  }
+
+  .secondaryButton {
+    left: 0;
+  }
+}
+
+
+.pharmacistText {
+  width: 60%;
+  margin-bottom: 50px;
+
+  span {
+    font-style: italic;
+    font-size: 2rem;
+    font-family: $primary;
+    font-weight: 200;
+  }
+}
+
+.pharmacistImage {
+  width: 40%;
+  margin-top: 200px;
+  padding: 50px;
+}

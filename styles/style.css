@@ -979,6 +979,38 @@ header .nav li:last-child a {
   margin-bottom: 150px;
 }
 
+.meetPharmacist {
+  font-family: "Open Sans", sans-serif;
+}
+
+.meetPharmacist .bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.meetPharmacist .secondaryButton {
+  left: 0;
+}
+
+.pharmacistText {
+  width: 60%;
+  margin-bottom: 50px;
+}
+
+.pharmacistText span {
+  font-style: italic;
+  font-size: 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 200;
+}
+
+.pharmacistImage {
+  width: 40%;
+  margin-top: 200px;
+  padding: 50px;
+}
+
 body {
   font-size: 62.5%;
 }
