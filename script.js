@@ -1,13 +1,14 @@
 // Namespace object
 const app = {}
 
+// ~~~~~~~~~~~~~~~
+// ~~ORDER FORM~~~
+// ~~~~~~~~~~~~~~~
+
 // Print order details on second page
 app.showDetails = () => {
   $('.orderDetails').show();
 }
-
-// Print confirmation
-
 
 // Next page
 app.next = () => {
@@ -24,9 +25,18 @@ app.sendForm = () => {
   $('#sendOrder').on('click', function(e){
     e.preventDefault();
     $('.orderDetails').hide();
+    // Print confirmation page
     $('.confirmation').show();
   })
 }
+
+// ~~~~~~~~~~~~~~~~~~
+// ~~DROP DOWN MENU~~
+// ~~~~~~~~~~~~~~~~~~
+
+
+
+
 
 // Initialize App
 app.init = () => {

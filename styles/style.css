@@ -837,6 +837,36 @@ header .nav li:last-child a {
   font-family: "Open Sans", sans-serif;
 }
 
+#carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px;
+}
+
+#carousel .card {
+  border: 1px solid #D0D0D0;
+  padding: 70px;
+  text-align: center;
+}
+
+#carousel h4 {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+#carousel h5 {
+  font-size: 1.2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+#carousel p {
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
 .orderProgress {
   display: -webkit-box;
   display: -ms-flexbox;
