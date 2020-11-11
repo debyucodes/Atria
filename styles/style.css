@@ -634,6 +634,15 @@ header .nav li:last-child a {
   padding: 10px 30px;
 }
 
+.aboutMenu,
+.serviceMenu {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .formMap .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

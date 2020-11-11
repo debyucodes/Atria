@@ -329,3 +329,10 @@ header {
     padding: 10px 30px;
   }
 }
+
+// DROP DOWN MENU
+.aboutMenu,
+.serviceMenu {
+  display: none;
+  flex-direction: column;
+}
