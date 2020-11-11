@@ -183,6 +183,7 @@ header {
     font-weight: 300;
     text-transform: capitalize;
     font-family: $secondary;
+    margin-bottom: 10px;
   }
 
   p {
@@ -194,6 +195,7 @@ header {
     font-size: 1.5rem;
     position: relative;
     left: 90%;
+    bottom: 5%;
     color: $darkgreen;
   }
 }

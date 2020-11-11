@@ -237,7 +237,7 @@ html {
 
 .wrapper {
   max-width: 1800px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -474,6 +474,7 @@ header .nav li:last-child a {
   font-weight: 300;
   text-transform: capitalize;
   font-family: "Open Sans", sans-serif;
+  margin-bottom: 10px;
 }
 
 .serviceContainer p {
@@ -485,6 +486,7 @@ header .nav li:last-child a {
   font-size: 1.5rem;
   position: relative;
   left: 90%;
+  bottom: 5%;
   color: #0B752D;
 }
 
@@ -751,12 +753,27 @@ header .nav li:last-child a {
   font-size: 1rem;
 }
 
-.theCircle {
-  border: 40px solid #0B752D;
+.innerCircle {
+  background: #f6eadd;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
-  height: 600px;
-  width: 600px;
-  margin: 200px auto;
+  text-align: center;
+}
+
+.theCircle {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0B752D), color-stop(#f6eadd), to(#0B752D));
+  background: linear-gradient(#0B752D, #f6eadd, #0B752D);
+  border-radius: 50%;
+  padding: 30px;
+  display: inline-block;
+  margin: 50px 20%;
+  background-color: #f6eadd;
+  position: relative;
+}
+
+.theCircle .circleText {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -764,48 +781,35 @@ header .nav li:last-child a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f6eadd;
-  position: relative;
+  width: 500px;
+  height: 500px;
 }
 
 .theCircle h3 {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
-  padding: 0 80px;
-  font-size: 1.5rem;
+  margin: 100px;
+  width: calc(90% - 200px);
+  font-size: 1.8rem;
   text-align: center;
-  font-weight: 600;
+  text-transform: none;
+  font-weight: 500;
 }
 
 .theCircle h4 {
   background: white;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   position: absolute;
-  width: 100%;
   text-align: center;
-}
-
-.theCircle ul {
-  list-style: none;
-  position: relative;
-}
-
-.theCircle ul li {
-  position: absolute;
-}
-
-.theCircle ul .top {
-  color: red;
-  font-size: 1.5rem;
-  bottom: 500px;
-  left: 10px;
+  margin: 150px 0 50px 0;
+  width: 600px;
 }
 
 .dermaHero .wrapper {
