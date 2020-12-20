@@ -3,7 +3,7 @@
 
   div:first-child {
     width: 40%;
-    box-shadow: -30px 30px 0 0 $peach;
+    box-shadow: -30px 30px 0 0 $nude;
     margin: 100px;
   }
 
@@ -29,7 +29,7 @@
   margin: 50px;
   
   .card {
-  border: 1px solid $silver;
+  border: 1px solid white;
   padding: 70px;
   text-align: center;
   }
@@ -91,7 +91,7 @@
 
 .dermaPinkBox {
   text-align: center;
-  background-color: $peach;
+  background-color: $nude;
   margin: 100px;
   padding: 20px 100px;
 
@@ -100,7 +100,7 @@
   }
 
   a {
-    background-color: $darkgreen;
+    background-color: $teal;
     padding: 10px 20px;
     border-radius: 5px;
     position: relative;

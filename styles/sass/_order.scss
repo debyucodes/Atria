@@ -10,8 +10,8 @@
   padding: 20px 0;
 
   span {
-    background: $orange;
-    border: 2px solid $silver;
+    // background: $orange;
+    border: 2px solid grey;
     padding: 5px 15px;
     border-radius: 50%;
     color: white;
@@ -20,7 +20,7 @@
 
 // Initial form on first page
 .orderForm {
-  background: $peach;
+  background: $nude;
   margin: 50px auto;
   width: 800px;
   font-family: $secondary;
@@ -47,7 +47,7 @@
   select {
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid $silver;
+    border: 1px solid grey;
   }
 
   button {
@@ -62,7 +62,7 @@
 // Display order details (on second page)
 .orderDetails {
   display: none;
-  background: $peach;
+  background: $nude;
   margin: 50px auto;
   width: 800px;
   font-family: $secondary;

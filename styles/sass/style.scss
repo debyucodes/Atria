@@ -23,16 +23,16 @@ img {
 // GENERAL BUTTON
 .button,
 button {
-  background-color: $darkgreen;
+  background-color: $salmon;
   padding: 20px;
   border-radius: 5px;
   color: white;
 }
 
 .secondaryButton {
-  border: 3px solid $darkgreen;
+  border: 3px solid $teal;
   border-radius: 30px;
-  color: $darkgreen;
+  color: $teal;
   position: relative;
   left: 350px;
   padding: 10px 20px;
@@ -42,7 +42,7 @@ a{
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: white;
 }
 

@@ -1,26 +1,23 @@
 h1 {
-  font-size: 3rem;
+  font-size: 3.8rem;
 }
 
 h3 {
   font-size: 2rem;
   text-transform: uppercase;
-  font-style: italic;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 100;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-left: 80px;
   text-transform: capitalize;
-  font-style: italic;
-  color: $orange;
   font-weight: 200;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: $secondary;
   font-weight: 300;
   line-height: 1.6;
@@ -29,4 +26,5 @@ p {
 a {
   font-family: $secondary;
 }
+
 

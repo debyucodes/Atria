@@ -34,6 +34,19 @@ app.sendForm = () => {
 // ~~DROP DOWN MENU~~
 // ~~~~~~~~~~~~~~~~~~
 
+// Circle hover function
+app.circleHover = () => {
+  $('.circleText').find('li').hover(function(){
+    $('.hoverText').addClass('hide');
+    $(this).next('.hide').show();
+  }, function(){
+    $('.hoverText').removeClass('hide');
+    $(this).next('.hide').hide();
+    console.log('bye');
+  })
+}
+
+
 
 
 
@@ -42,6 +55,7 @@ app.sendForm = () => {
 app.init = () => {
   app.next();
   app.sendForm();
+  app.circleHover();
 }
 
 // Document ready!

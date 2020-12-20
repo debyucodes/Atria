@@ -1,6 +1,7 @@
 // ABOUT SECTION
 .about .wrapper{
   display: flex;
+  margin-bottom: 100px;
 
   article {
     width: 70%;
@@ -33,8 +34,12 @@
   }
 }
 
+.hide {
+  display: none;
+}
+
 .innerCircle {
-  background: $peach;
+  background: $nude;
   width: 500px;
   height: 500px;
   border-radius: 50%;
@@ -42,12 +47,12 @@
 }
 
 .theCircle {
-  background: linear-gradient($darkgreen, $peach, $darkgreen);
+  background: linear-gradient($salmon, $nude, $salmon);
   border-radius: 50%;
   padding: 30px;
   display: inline-block;
-  margin: 50px 20%;
-  background-color: $peach;
+  margin: 0 30%;
+  background-color: $nude;
   position: relative;
 
   .circleText {
@@ -73,12 +78,87 @@
 
   h4 {
     background: white;
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-family: $secondary;
     position: absolute;
     text-align: center;
-    margin: 150px 0 50px 0;
+    margin: 180px 0 50px 0;
     width: 600px;
+    padding: 10px 0;
+
+    i{
+      margin-right: 10px;
+    }
+  }
+
+
+  ul li {
+    position: absolute;
+    list-style: none;
+    font-size: 1.2rem;
+    min-width: 150px;
+    cursor: pointer;
+  }
+
+  ul h3 {
+    font-size: 1.8rem;
+    width: 250px;
+    margin-left: 85px;
+    margin-bottom: 50px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin: 0 40px 60px 0;
+  }
+
+  a {
+    border: 2px solid #D49E8D;
+    border-radius: 15px;
+    padding: 5px 30px;
+    color: #D49E8D;
+    font-size: 1.2rem;
+    margin-right: 40px;
+  }
+
+  .top {
+    top: -90px;
+    left: 156px;
+  }
+
+  .topRight {
+    top: 30px;
+    left: 500px;
+  }
+
+  .right {
+    top: 230px;
+    left: 595px;
+  }
+
+  .bottomRight {
+    bottom: 0;
+    left: 500px;
+  }
+
+  .bottom {
+    bottom: -90px;
+    left: 140px;
+  }
+
+  .bottomLeft {
+    bottom: 0;
+    right: 500px;
+  }
+
+  .left {
+    top: 230px;
+    right: 595px;
+  }
+
+  .topLeft {
+    top: 30px;
+    right: 500px;
   }
 
 }

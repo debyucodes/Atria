@@ -5,15 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://kit.fontawesome.com/3e2ecb9775.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">  -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="./styles/style.css">
   <title>Atria Pharmacy</title>
 </head>
+
 <body>
   <header>
-    <div class="logo">
-      <img src="./assets/logo.png" alt="Atria Pharmacy logo">
+    <div class="logoName">
+      <div class="logo">
+        <img src="./assets/Logo_homepage.JPG" alt="Atria Pharmacy logo">
+      </div>
+      <div class="pharmacyName">
+        <img src="./assets/pharmacyname.png" alt="">
+      </div>
     </div>
+    
     <nav>
       <ul class="info">
         <li>104-69 Lebovic Avenue, ON</li>
@@ -25,7 +35,7 @@
       <hr>
       <ul class="nav">
         <li>
-          <a href="./about/about.html">about</a>
+          <a href="./about.html">about</a>
           <ul class="aboutMenu">
             <li>one</li>
             <li>two</li>
@@ -41,10 +51,10 @@
           </ul>
         </li>
         <li>
-          <a href="">products</a>
+          <a href="https://decodinghealthblog.com" target="_blank">blog</a>
         </li>
         <li>
-          <a href="./contact/contact.html">contact</a>
+          <a href="./contact.html">contact</a>
         </li>
         <li>
           <a href="./order.html" class="button">order prescription</a>
@@ -56,204 +66,209 @@
   <main>
     <!-- HERO -->
     <section class="heroOne">
-      <div class="wrapper">
         <div class="heroText">
           <h1>Personalized Medicine to Solve Health Issues</h1>
-          <p>You don't have to face health challenges on your own!</p>
-          <p>Medication is custom-made at Atria Pharmacy</p>
-          <!-- <div>
-            <i class="fas fa-chevron-circle-right"></i>
-          </div> -->
+          <ul>
+            <li><i class="fas fa-square-full"></i>Trusted source of compounded medication</li>
+            <li><i class="fas fa-square-full"></i>Fast turnaround time</li>
+            <li><i class="fas fa-square-full"></i>Convenient online order</li>
+          </ul>
           <a href="" class="button">speak to a pharmacist</a>
         </div>
-      </div>
-    </section>
-
-    <!-- WELCOME -->
-    <section class="welcome">
-      <div class="wrapper">
-        <img src="./assets/Homepage2.jpeg" alt="">
-        <div class="text">
-          <h3>welcome to</h3>
-          <h2>compounding</h2>
-          <p>Compounded medicine can be life-changing. We help solve tough health challenges through personalized medicine.</p>
-          <p>Our compounding pharmacist works with doctors to fill a gap in healthcare through customized solutions for patients' needs</p>
-          <a class="secondaryButton" href="">learn more</a>
+        <div class="heroImage">
+          <img src="./assets/Homepage1_edited.jpeg" alt="">
         </div>
-      </div>
+        <div class="stickerOne sticker">
+          <p>Immerse possibility</p>
+        </div>
+        <div class="stickerTwo sticker">
+          <p>Find your unique solution in medicine</p>
+        </div>
     </section>
 
-    <!-- NEW FEATURE -->
-    <section class="feature">
+    <!-- FEATURE BANNER -->
+    <section class="featureOne">
       <div class="wrapper">
-        <h3>new feature</h3>
-        <h2>order your prescriptions is easier than before</h2>
-        <div class="featureFlex">
-          <div class="featureBox">
-            <h4>1</h4>
-            <p>Fill out the online form below</p>
-            <a href="./order.html">online form</a>
-          </div>
-          <div class="featureBox">
-            <h4>2</h4>
+        <ul class="featureOne">
+          <li>
+            <img src="./assets/Icon1.png" alt="">
+            <a href="./order.html"><p>Click here to fill out the form</p></a>
+            <h3 class="numberOne">1</h3>
+          </li>
+          <li>
+            <img src="./assets/Icon2.png" alt="">
             <p>Wait for a confirmation email</p>
-          </div>
-          <div class="featureBox">
-            <h4>3</h4>
-            <p>Arrange for a pick-up or delivery</p>
+            <h3>2</h3>
+          </li>
+          <li>
+            <img src="./assets/Icon3.png" alt="">
+            <p>Arrange for a pick up or delivery</p>
+            <h3>3</h3>
+          </li>
+        </ul>
+        <hr class="lineOne">
+        <hr class="lineTwo">
+        <h2>3 Easy Steps to Order Your Prescription ONLINE</h2>
+      </div>
+      </div>
+    </section>
+
+    <!-- FEATURE TWO -->
+    <div class="featureTwo">
+      <div class="wrapper">
+        <div class="featureImage">
+          <img src="./assets/Image2.png" alt="">
+        </div>
+        <div class="featureText">
+          <h2>COMPOUNDED MEDICINE</h2>
+          <p>Our Atria pharmacy professionals are extensively trained to work with your doctor and find a customized medicine that addresses your health challenge, including skin condition, pain management, hormone imbalance and more.</p>
+          <a href="">TALK TO US</a>
+          <div class="sticker">
+            <p>Looking for</p>
           </div>
         </div>
       </div>
-    </section>
+      
+    </div>
+
+    <!-- CIRCLE -->
+    <div class="theCircle">
+      <div class="innerCircle">
+        <div class="circleText">
+          <h3 class="hoverText">What can we help you with today?</h3>
+          <h4 class="hoverText"><i class="fas fa-mouse-pointer"></i>Hover on each topic to learn more</h4>
+          <ul>
+            <li class="top">Side effects to oral tablet</li>
+            <div class="hide">
+              <h3>Side effects to oral tablet</h3>
+              <p>Apply pain cream to avoid systemic side effects like stomach irritation or kidney problem</p>
+              <a href="">Learn more</a>
+            </div>
+            <li class="topRight">Unavailable dosage</li>
+            <div class="hide">
+              <h3>Unavailable dosage</h3>
+              <p>Precision dosing e.g. tapering dose on anti-depressants or bio-identical hormones</p>
+              <a href="">Learn more</a>
+            </div>
+            <li class="right">Allergic to skincare product</li>
+            <div class="hide">
+              <h3>Allergic to skincare product</h3>
+              <p>Customize cream that is hypoallergic, non-comedogenic, non-irritating, odour-free</p>
+              <a href="">Learn more</a>
+            </div>
+            <li class="bottomRight"> Medication unavailable</li>
+            <div class="hide">
+              <h3>Medication unavailable</h3>
+              <p>Source the pure active ingredient and make an alternative medicine.</p>
+              <a href="">Learn more</a>
+            </div>
+            <li class="bottom">Gluten or lactose intolerance</li>
+            <div class="hide">
+              <h3>Gluten/lactose intolerance</h3>
+              <p>Source the active ingredient and customize in a base without gluten, lactose or sugar.</p>
+              <a href="">Learn more</a>
+            </div>
+            <li class="bottomLeft">Difficulty swallowing</li>
+            <div class="hide">
+              <h3>Difficulty swallowing</h3>
+              <p>Medication can be made in liquid, sublingual or suppository to solve oral administration issues.</p>
+              <a href="">Learn more</a>
+            </div>
+            <li class="left">Unpalatable medication</li>
+            <div class="hide">
+              <h3>Unpalatable medication</h3>
+              <p>Flavour can mask bitterness. Strawberry, grape, tutti frutti, chocolate flavours to choose.</p>
+              <a href="">Learn more</a>
+            </div>
+            <li class=" topLeft">Hormone imbalance</li>
+            <div class="hide">
+              <h3>Hormone imbalance</h3>
+              <p>Formulate bio-identical hormones to restore body natural hormones level</p>
+              <a href="">Learn more</a>
+            </div>
+          </ul>
+          <div class="logo">
+            <img src="../assets/logo.png" alt="">
+          </div>
+          <!-- items -->
+          
+        </div>
+      </div>
+    </div>
+
 
     <!-- PHARMACY SERVICE -->
-    <section>
+    <section class="pharmacyServices">
       <div class="wrapper">
-        <h3>choose your</h3>
-        <h2>pharmacy service</h2>
-        <div class="serviceGrid">
-          <div class="serviceContainer">
-            <div class="serviceImage">
-              <img src="./assets/Homepage3.jpg" alt="">
-            </div>
-            <div class="serviceText">
-              <h4>order compounded medicine</h4>
-              <p>Your customized medications can be ordered online</p>
-              <a href="">
-                <i class="fas fa-chevron-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="serviceContainer">
-            <div class="serviceImage">
-              <img src="./assets/Homepage4.jpg" alt="">
-            </div>
-            <div class="serviceText">
-              <h4>organize my medications</h4>
-              <p>Your medications can be organized in daily and weekly dosage sets</p>
-              <a href="">
-                <i class="fas fa-chevron-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="serviceContainer">
-            <div class="serviceImage">
-              <img src="./assets/Homepage5.jpg" alt="">
-            </div>
-            <div class="serviceText">
-              <h4>review my medications</h4>
-              <p>Consultation with pharmacist about the safety and proper use of medications</p>
-              <a href="">
-                <i class="fas fa-chevron-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="serviceContainer">
-            <div class="serviceImage">
-              <img src="./assets/Homepage6.jpg" alt="">
-            </div>
-            <div class="serviceText">
-              <h4>nutrition consultation</h4>
-              <p>Get advice on how to eat healthy and support an optimal well-being</p>
-              <a href="">
-                <i class="fas fa-chevron-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="serviceContainer">
-            <div class="serviceImage">
-              <img src="./assets/Homepage7.jpg" alt="">
-            </div>
-            <div class="serviceText">
-              <h4>cosmetic consultation</h4>
-              <p>Get an assessment by our skin specialist and receive a customized skincare cream</p>
-              <a href="">
-                <i class="fas fa-chevron-right"></i>
-              </a>
-            </div>
-          </div>
-          
-          <div class="serviceContainer">
-            <div class="serviceImage">
-              <img src="./assets/Homepage8.jpg" alt="">
-            </div>
-            <div class="serviceText">
-              <h4>health resources</h4>
-              <p>Get the latest resources about health and disease</p>
-              <a href="">
-                <i class="fas fa-chevron-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIAL -->
-    <section>
-      <div class="banner">
-        <div class="wrapper">
-          <h2>patients' stories & information</h2>
-          <h3>Experience in Atria Pharmacy</h3>
-        </div>
-      </div>
-      <div class="testimonial wrapper">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio perspiciatis vitae asperiores consectetur. Velit a qui at exercitationem. Vero, ipsum?</p>
-        <h5>Name Last Name</h5>
-        <i class="fas fa-ellipsis-h"></i>
-      </div>
-    </section>
-
-    <!-- SECOND BANNER -->
-    <section class="bannerTwo">
-      <div class="wrapper">
+        <h3>benefit of choosing us</h3>
+        <h2>pharmacy services</h2>
         <ul>
           <li>
-            <i class="fas fa-dolly-flatbed"></i>
-            <p>free shipping within GTA</p>
+            <div class="imageContainer">
+              <img src="./assets/Image3.jpg" alt="">
+            </div>
+            <p>Customized medicine to meet the unique your need</p>
           </li>
           <li>
-            <i class="far fa-check-circle"></i>
-            <p>guaranteed quality USP 795 and 800</p>
-          <li>
-            <i class="fas fa-user"></i>
-            <p>partnership PCCA Medisca</p>
+            <div class="imageContainer">
+              <img src="./assets/Image4.jpg" alt="">
+            </div>
+            <p>Medication consultation to review and organize your medication in pill packs</p>
           </li>
           <li>
-            <i class="far fa-thumbs-up"></i>
-            <p>professional services</p>
+            <div class="imageContainer">
+              <img src="./assets/Image5.jpg" alt="">
+            </div>
+            <p>Skincare consultation to find a customized cream for your skin type</p>
           </li>
           <li>
-            <i class="far fa-image"></i>
-            <p>accept most benefits</p>
+            <div class="imageContainer">
+              <img src="./assets/Image6.jpg" alt="">
+            </div>
+            <p>Nutritional consultation to optimize healthy lifestyle</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <section>
-      <div class="wrapper">
-        <div class="blog">
-          <div class="blogImage">
-            <img src="./assets/Homepage8.jpg" alt="">
-          </div>
-          <div class="blogText">
-            <h2>blog topic</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ab omnis optio temporibus dignissimos minima quisquam error, magnam vitae odio.</p>
-            <a class="button" href="">read more</a>
-            <p>14 april 2018 by name last name</p>
-          </div>
-        </div>
+    <section class="blog">
+      <div>
+        <h2>Blog Topic</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima eligendi natus, nemo tenetur iste, unde vel hic omnis odio a qui? Facilis, eaque numquam perspiciatis illo sed cumque quaerat deserunt.
+        </p>
       </div>
     </section>
+
+    <!-- SECOND BANNER -->
+    <section class="bannerTwo">
+      <ul>
+        <li>
+          <img src="./assets/Icon4.png" alt="">
+          <p>Free Shipping within GTA</p>
+        </li>
+        <li>
+          <img src="./assets/Icon5.png" alt="">
+          <p>Guaranteed Quality USP 795 and 800</p>
+        <li>
+          <img src="./assets/Icon6.png" alt="">
+          <p>Partnership PCCA Medisca</p>
+        </li>
+        <li>
+          <img src="./assets/Icon7.png" alt="">
+          <p>Professional Services</p>
+        </li>
+        <li>
+          <img src="./assets/Icon8.png" alt="">
+          <p>Accept Most Benefits</p>
+        </li>
+      </ul>
+    </section>
+
+    
   </main>
 
   <footer>
-    <section class="subsribe">
+    <!-- <section class="subscribe">
       <div class="wrapper">
         <h3>Receive the Latest Updates</h3>
         <form action="">
@@ -262,14 +277,70 @@
           <button type="submit">subscribe</button>
         </form>
       </div>
-    </section>
-    <section class="footer">
+    </section> -->
+    <section class="footerBar">
+      <div class="footerSocial">
+        <img src="./assets/logo.png" alt="" class="logo">
+        <div>
+          <h3>STAY CONNECTED</h3>
+          <ul>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+          <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+          <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+          </ul>
+        </div>
+      </div>
 
+      <div class="footerNav">
+        <h3>CATEGORIES</h3>
+        <div>
+          <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./meetAtria.html">Meet Atria Pharmacy</a></li>
+            <li><a href="./meetPharmacists.html">Meet Our Pharmacist</a></li>
+            <li><a href="./about.html">What is Compounding</a></li>
+          </ul>
+          <ul>
+            <li><a href="">Compounding Service</a></li>
+            <li><a href="">Dermatology</a></li>
+            <li><a href="">Pain Management</a></li>
+            <li><a href="">Rectal and Gut Condition</a></li>
+            <li><a href="">Children's Medication</a></li>
+            <li><a href="">Hormone Therapy</a></li>
+          </ul>
+          <ul>
+            <li>Sex Health</li>
+            <li>Others</li>
+            <li>Medication</li>
+            <li>Management</li>
+            <li>Lifestyle</li>
+            <li>Testimonials</li>
+            <li>Blogs</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footerPartners">
+        <h3>Partners</h3>
+        <ul>
+          <li><a href="">PCCA</a></li>
+          <li><a href="">Medisca</a></li>
+          <li><a href="">Galenova</a></li>
+          <li><a href="">Mckesson</a></li>
+          <li><a href="">Metagenics</a></li>
+          <li><a href="">Genestra</a></li>
+        </ul>
+      </div>
     </section>
     <section class="disclaimer">
-      <p>MEDICAL ADVICE DISCLAIMER</p>
-      <p>The Author provides the sites and the services, information, content and/or data (collectively, 'information') contained therein for informational purposes only. The Author</p>
+      <h3>MEDICAL ADVICE DISCLAIMER</h3>
+      <p>The Author provides the sites and the services, information, content and/or data (collectively, 'information') contained therein for informational purposes only. The Author does not provide any medical advice on the Site, and the information should not be so construed or used. Using, accessing and/or browsing the Site and/providing personal or medical information the the Author does not create a pharmacist-patient relationship between you and the Author. Nothing contained in the Site is intended to create a pharamcist-patient relationship, to replace the services of a licensed, trained pharmacist or health professional or to be a substitute for medical advice of a pharmaicst, physician or trained health professional licensed in your state. You should not rely on anything contained in the Site, and you should consult a physician licensed in your state in all matters relating to your health, You hereby agree that you shall not make any health or medical related decision based in whole or in part on anything contained in the Site.</p>
+      
     </section>
   </footer>
+
+  <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+  <script src="./script.js"></script>
 </body>
 </html>
