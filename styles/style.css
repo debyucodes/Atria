@@ -248,7 +248,7 @@ h1 {
 h3 {
   font-size: 2rem;
   text-transform: uppercase;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 100;
 }
 
@@ -267,7 +267,7 @@ p {
 }
 
 a {
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 header {
@@ -609,6 +609,42 @@ h2 {
   text-transform: none;
 }
 
+.blog {
+  background: #FAF6F2;
+  margin-top: 400px;
+  padding: 0 100px;
+}
+
+.blog .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog .wrapper div {
+  width: 50%;
+}
+
+.blog .wrapper p {
+  font-size: 1.1rem;
+}
+
+.blog .wrapper div:last-of-type {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: right;
+}
+
+.blog .wrapper a {
+  background-color: #1FA091;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+}
+
 .bannerTwo ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -626,6 +662,10 @@ h2 {
   border-right: 2px solid grey;
   padding: 0 20px;
   width: 20%;
+}
+
+.bannerTwo li p {
+  font-size: 0.9rem;
 }
 
 .bannerTwo li:last-child {
@@ -648,33 +688,38 @@ h2 {
   margin: 0;
 }
 
-.subsribe {
-  background-color: #FAF6F2;
-}
-
-.subsribe .wrapper {
+.subscribe form {
+  background: #FAF6F2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px 0;
+  margin-top: 30px;
 }
 
-.subsribe input {
-  padding: 0 10px;
-  font-size: 1.2rem;
-  padding: 10px 300px 10px 10px;
+.subscribe form input {
+  width: 40%;
+  font-size: 1.3rem;
+  padding: 5px 10px;
 }
 
-.subsribe button {
-  background: black;
-  border: none;
-  font-size: 1.2rem;
-  padding: 10px 30px;
+.subscribe form h3 {
+  text-transform: capitalize;
+}
+
+.subscribe form button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.3rem;
+  padding: 10px 20px;
+  background: #1FA091;
 }
 
 footer {
@@ -684,6 +729,21 @@ footer {
 
 footer h3 {
   font-size: 1.3rem;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer li {
+  padding-left: 0;
+}
+
+footer a {
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
 footer .footerBar {
@@ -699,6 +759,8 @@ footer .footerSocial {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-right: 2px solid grey;
+  justify-self: flex-start;
 }
 
 footer .footerSocial ul {
@@ -713,6 +775,11 @@ footer .footerSocial i {
   padding-right: 20px;
 }
 
+footer .footerNav {
+  border-right: 2px solid grey;
+  margin-left: 0;
+}
+
 footer .footerNav div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -723,13 +790,23 @@ footer .footerNav div ul {
   list-style: none;
 }
 
-footer p {
+footer .footerNav p {
   font-size: 1rem;
   line-height: 1.2;
 }
 
-footer .footerPartners ul {
+footer .footerNav .footerPartners ul {
   list-style: none;
+  padding-left: 0;
+}
+
+footer .footerNav .footerPartners ul li {
+  padding-left: none;
+}
+
+.disclaimer p {
+  font-size: 0.7rem;
+  margin: 0;
 }
 
 .aboutMenu,
@@ -745,6 +822,9 @@ footer .footerPartners ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .formMap .wrapper form {
@@ -755,12 +835,13 @@ footer .footerPartners ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: calc(50% - 40px);
-  margin: 80px 20px;
+  width: 60%;
+  margin: 20px 0;
+  padding: 0;
 }
 
 .formMap .wrapper form h2 {
-  margin: 30px 0;
+  margin: 0 0 20px 0;
   font-style: normal;
   font-family: "Lora", serif;
 }
@@ -774,11 +855,10 @@ footer .footerPartners ul {
 }
 
 .formMap .wrapper form button {
-  width: 40%;
-  font-size: 1.8rem;
-  padding: 10px 20px;
+  width: 30%;
+  font-size: 1.3rem;
+  padding: 10px 10px;
   margin-top: 20px;
-  border: none;
 }
 
 .formMap .wrapper form textarea {
@@ -786,8 +866,7 @@ footer .footerPartners ul {
 }
 
 .formMap .wrapper .map {
-  width: 50%;
-  margin-top: 20px;
+  margin: 20px 0 0 50px;
 }
 
 .hours {
@@ -802,14 +881,14 @@ footer .footerPartners ul {
 .hours ul {
   list-style: none;
   font-family: "Lora", serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: 0;
   font-weight: 400;
 }
 
 .hours h4 {
   font-family: "Lora", serif;
-  font-size: 1.6rem;
+  font-size: 1.1rem;
 }
 
 .hours div {
@@ -821,7 +900,9 @@ footer .footerPartners ul {
 }
 
 .hours p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  margin: 0;
+  line-height: 1;
 }
 
 .about .wrapper {
@@ -877,11 +958,12 @@ footer .footerPartners ul {
   background: -webkit-gradient(linear, left top, left bottom, from(#FB575B), color-stop(#FAF6F2), to(#FB575B));
   background: linear-gradient(#FB575B, #FAF6F2, #FB575B);
   border-radius: 50%;
-  padding: 30px;
+  padding: 20px;
   display: inline-block;
   margin: 0 30%;
   background-color: #FAF6F2;
   position: relative;
+  top: -200px;
 }
 
 .theCircle .circleText {
@@ -950,10 +1032,10 @@ footer .footerPartners ul {
 }
 
 .theCircle a {
-  border: 2px solid #D49E8D;
+  border: 2px solid #1FA091;
   border-radius: 15px;
   padding: 5px 30px;
-  color: #D49E8D;
+  color: #1FA091;
   font-size: 1.2rem;
   margin-right: 40px;
 }
@@ -1310,6 +1392,9 @@ button {
   padding: 20px;
   border-radius: 5px;
   color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  border: none;
 }
 
 .secondaryButton {

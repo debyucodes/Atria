@@ -7,8 +7,9 @@
   <script src="https://kit.fontawesome.com/3e2ecb9775.js" crossorigin="anonymous"></script>
   <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">  -->
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="./styles/style.css">
   <title>Atria Pharmacy</title>
 </head>
@@ -232,10 +233,15 @@
     </section>
 
     <section class="blog">
-      <div>
-        <h2>Blog Topic</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima eligendi natus, nemo tenetur iste, unde vel hic omnis odio a qui? Facilis, eaque numquam perspiciatis illo sed cumque quaerat deserunt.
-        </p>
+      <div class="wrapper">
+        <div>
+          <h3>Blog</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima eligendi natus, nemo tenetur iste, unde vel hic omnis odio a qui? Facilis, eaque numquam perspiciatis illo sed cumque quaerat deserunt.
+          </p>
+        </div>
+        <div>
+          <a href="https://decodinghealthblog.com" target="_blank">Read More</a>
+        </div>
       </div>
     </section>
 
@@ -244,45 +250,91 @@
       <ul>
         <li>
           <img src="./assets/Icon4.png" alt="">
-          <p>Free Shipping within GTA</p>
+          <p>Free Shipping</p>
+          <p>Within GTA</p>
         </li>
         <li>
           <img src="./assets/Icon5.png" alt="">
           <p>Guaranteed Quality USP 795 and 800</p>
         <li>
           <img src="./assets/Icon6.png" alt="">
-          <p>Partnership PCCA Medisca</p>
+          <p>Partnership</p>
+          <p>PCCA and Medisca</p>
         </li>
         <li>
           <img src="./assets/Icon7.png" alt="">
-          <p>Professional Services</p>
+          <p>Professional Services Healthcare provider</p>
         </li>
         <li>
           <img src="./assets/Icon8.png" alt="">
-          <p>Accept Most Benefits</p>
+          <p>Accept Most Benefits, Private and gov't
         </li>
       </ul>
     </section>
+
+    <section class="formMap">
+      <div class="wrapper">
+        <form action="">
+          <h2>have questions or comments?</h2>
+          <!-- name -->
+          <label for="" class="sr-only">name</label>
+          <input type="text" placeholder="name">
+          <!-- phone number -->
+          <label for="" class="sr-only">phone</label>
+          <input type="text" placeholder="phone">
+          <!-- email -->
+          <label for="" class="sr-only">email</label>
+          <input type="email" placeholder="email">
+          <!-- comment -->
+          <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+          <button type="submit">SEND</button>
+        </form>
+  
+          <!-- EMBED GOOGLE MAP -->
+        <div class="map">
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=69%20Lebovic%20Avenue%2C%20Unit%20D104%2C%20Scarborough%2C%20ON%2C%20M1L%200H2&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a></div><style>.mapouter{position:relative;text-align:right;height:300px;width:500px;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:500px;}</style></div>
+
+          <div class="hours">
+            <div>
+              <h4>Hours of Operation</h4>
+              <ul>
+                <li><span>Mon</span>9:30 AM to 7:00 PM</li>
+                <li><span>Tues</span>9:30 AM to 7:00 PM  </li>
+                <li><span>Wed</span>9:30 AM to 7:00 PM</li>
+                <li><span>Thurs</span>9:30 AM to 7:00 PM</li>
+                <li><span>Fri</span>9:30 AM to 7:00 PM</li>
+                <li><span>Sat</span>9:30 AM to 4:00 PM</li>
+                <li><span>Sun</span>closed</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Pharmacy Address</h4>
+              <p>69 Lebovic Avenue, Unit D104</p>
+              <p>Scarborough, Ontario M1L 4T7</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe">
+        <form action="">
+          <h3>Receive the Latest Updates</h3>
+          <input type="email" placeholder="Enter your email">
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+      </section>
 
     
   </main>
 
   <footer>
-    <!-- <section class="subscribe">
-      <div class="wrapper">
-        <h3>Receive the Latest Updates</h3>
-        <form action="">
-          <label class="sr-only" for="">email</label>
-          <input type="email" placeholder="Enter your email">
-          <button type="submit">subscribe</button>
-        </form>
-      </div>
-    </section> -->
+
     <section class="footerBar">
       <div class="footerSocial">
         <img src="./assets/logo.png" alt="" class="logo">
         <div>
-          <h3>STAY CONNECTED</h3>
+          <p>STAY CONNECTED</p>
           <ul>
             <li><a href=""><i class="fab fa-twitter"></i></a></li>
           <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
@@ -292,7 +344,7 @@
       </div>
 
       <div class="footerNav">
-        <h3>CATEGORIES</h3>
+        <p>CATEGORIES</p>
         <div>
           <ul>
             <li><a href="/">HOME</a></li>
@@ -302,7 +354,7 @@
             <li><a href="./about.html">What is Compounding</a></li>
           </ul>
           <ul>
-            <li><a href="">Compounding Service</a></li>
+            <li><a href="">SERVICE</a></li>
             <li><a href="">Dermatology</a></li>
             <li><a href="">Pain Management</a></li>
             <li><a href="">Rectal and Gut Condition</a></li>
@@ -310,19 +362,20 @@
             <li><a href="">Hormone Therapy</a></li>
           </ul>
           <ul>
-            <li>Sex Health</li>
-            <li>Others</li>
-            <li>Medication</li>
-            <li>Management</li>
-            <li>Lifestyle</li>
-            <li>Testimonials</li>
-            <li>Blogs</li>
+            <li><a href="">Sex Health</a></li>
+            <li><a href="">Others</a></li>
+            <li><a href="">Medication</a></li>
+            <li><a href="">Management</a></li>
+            <li><a href="">Lifestyle</a></li>
+          </ul>
+          <ul>
+            <li><a href="">BLOG</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footerPartners">
-        <h3>Partners</h3>
+        <p>Partners</p>
         <ul>
           <li><a href="">PCCA</a></li>
           <li><a href="">Medisca</a></li>
@@ -334,7 +387,7 @@
       </div>
     </section>
     <section class="disclaimer">
-      <h3>MEDICAL ADVICE DISCLAIMER</h3>
+      <p>MEDICAL ADVICE DISCLAIMER</p>
       <p>The Author provides the sites and the services, information, content and/or data (collectively, 'information') contained therein for informational purposes only. The Author does not provide any medical advice on the Site, and the information should not be so construed or used. Using, accessing and/or browsing the Site and/providing personal or medical information the the Author does not create a pharmacist-patient relationship between you and the Author. Nothing contained in the Site is intended to create a pharamcist-patient relationship, to replace the services of a licensed, trained pharmacist or health professional or to be a substitute for medical advice of a pharmaicst, physician or trained health professional licensed in your state. You should not rely on anything contained in the Site, and you should consult a physician licensed in your state in all matters relating to your health, You hereby agree that you shall not make any health or medical related decision based in whole or in part on anything contained in the Site.</p>
       
     </section>

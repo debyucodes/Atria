@@ -49,11 +49,13 @@
 .theCircle {
   background: linear-gradient($salmon, $nude, $salmon);
   border-radius: 50%;
-  padding: 30px;
+  padding: 20px;
   display: inline-block;
   margin: 0 30%;
   background-color: $nude;
   position: relative;
+  top: -200px;
+
 
   .circleText {
     position: absolute;
@@ -113,10 +115,10 @@
   }
 
   a {
-    border: 2px solid #D49E8D;
+    border: 2px solid $teal;
     border-radius: 15px;
     padding: 5px 30px;
-    color: #D49E8D;
+    color: $teal;
     font-size: 1.2rem;
     margin-right: 40px;
   }

@@ -35,19 +35,14 @@ app.sendForm = () => {
 // ~~~~~~~~~~~~~~~~~~
 
 // Circle hover function
+
 app.circleHover = () => {
   $('.circleText').find('li').hover(function(){
     $('.hoverText').addClass('hide');
+    $('.hide').hide();
     $(this).next('.hide').show();
-  }, function(){
-    $('.hoverText').removeClass('hide');
-    $(this).next('.hide').hide();
-    console.log('bye');
   })
 }
-
-
-
 
 
 
