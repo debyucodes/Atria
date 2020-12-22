@@ -33,9 +33,17 @@ header {
     a {
       color: black;
       font-size: 1rem;
+      
+      &:hover {
+        color: $teal;
+      }
+
+      i {
+        padding-left: 5px;
+      }
     }
 
-    li:last-child a {
+    .action {
       color: white;
       font-size: 1.3rem;
       padding: 10px 15px;
@@ -449,13 +457,13 @@ footer {
 
   .footerBar {
     display: flex;
-    justify-content: space-between;
   }
 
   .footerSocial {
     display: flex;
     border-right: 2px solid grey;
     justify-self: flex-start;
+    padding-right: 100px;
 
     ul {
       display: flex;
@@ -471,12 +479,14 @@ footer {
   .footerNav {
     border-right: 2px solid grey;
     margin-left: 0;
+    padding: 0 100px;
     
     div{
       display: flex;
   
       ul {
         list-style: none;
+        padding: 0 10px;
       }
     }
   
@@ -484,16 +494,10 @@ footer {
       font-size: 1rem;
       line-height: 1.2;
     }
+  }
 
-  
-    .footerPartners ul {
-      list-style: none;
-      padding-left: 0;
-      
-      li {
-        padding-left: none;
-      }
-    }
+  .footerPartners {
+    padding-left: 100px;
   }
 }
 
@@ -502,9 +506,3 @@ footer {
   margin: 0;
 }
 
-// DROP DOWN MENU
-.aboutMenu,
-.serviceMenu {
-  display: none;
-  flex-direction: column;
-}

@@ -33,21 +33,40 @@ app.sendForm = () => {
 // ~~~~~~~~~~~~~~~~~~
 // ~~DROP DOWN MENU~~
 // ~~~~~~~~~~~~~~~~~~
+app.menu = () => {
+  $('.dropDown').hover(function() {
+    $(this).find('ul').slideToggle();
+  })
+}
+
+app.secondMenu = () => {
+  $('.secondMenu').hover(function(){
+    console.log('hi');
+    $(this).next('ul').slideToggle();
+  })
+}
 
 // Circle hover function
 
 app.circleHover = () => {
-  $('.circleText').find('li').hover(function(){
+  $('.circleText').find('li').mouseenter(function(){
     $('.hoverText').addClass('hide');
     $('.hide').hide();
-    $(this).next('.hide').show();
-  })
-}
+    $(this).next('.hide').fadeIn(400);
+    // $(this).css('color', 'red');
+  }
+  // , function() {
+  //   $(this).css('color', 'black');
+  // }
+  )
 
+}
 
 
 // Initialize App
 app.init = () => {
+  app.menu();
+  app.secondMenu();
   app.next();
   app.sendForm();
   app.circleHover();

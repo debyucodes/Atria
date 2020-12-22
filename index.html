@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://kit.fontawesome.com/3e2ecb9775.js" crossorigin="anonymous"></script>
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">  -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet"> 
   <!-- <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">  
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="./styles/style.css">
   <title>Atria Pharmacy</title>
 </head>
@@ -35,30 +34,49 @@
       </ul>
       <hr>
       <ul class="nav">
-        <li>
-          <a href="./about.html">about</a>
-          <ul class="aboutMenu">
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
+        <li class="dropDown">
+          <a href="./about.html">about<i class="fas fa-caret-down"></i></a>
+          <ul class="menu">
+            <li><a href="./meetAtria.html">Meet Atria</a></li>
+            <li><a href="./meetPharmacists.html">Meet Our Pharmacists</a></li>
+            <li><a href="./about.html">What is a Compounding Pharmacy</a></li>
           </ul>
         </li>
-        <li>
-          <a href="">services</a>
-          <ul class="serviceMenu">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+        <li class="dropDown">
+          <a href="">services<i class="fas fa-caret-down"></i></a>
+          <ul class="menu">
+            <li>
+              <a class="secondMenu">Compounding </a>
+              <ul class="secondMenuFlex">
+                <li><a href="./dermatology.html">Dermatology</a></li>
+                <li><a href="./pain.html">Pain Management</a></li>
+                <li><a href="">Rectal and Gut Discomfort</a></li>
+                <li><a href="">Children's Medication</a></li>
+                <li><a href="">Hormone Therapy</a></li>
+                <li><a href="">Sex Health</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="secondMenu">Pharmacy Services</a>
+              <ul class="secondMenuFlex">
+                <li><a href="">Medication Management</a></li>
+                <li><a href="">Transfer Prescription</a></li>
+                <li><a href="">Refill Prescription</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Lifestyle Clinic</a>
+            </li>
           </ul>
         </li>
         <li>
           <a href="https://decodinghealthblog.com" target="_blank">blog</a>
         </li>
         <li>
-          <a href="./contact.html">contact</a>
+          <a href="#contact">contact</a>
         </li>
         <li>
-          <a href="./order.html" class="button">order prescription</a>
+          <a href="./order.html" class="button action">order prescription</a>
         </li>
       </ul>
     </nav>
@@ -123,7 +141,7 @@
         <div class="featureText">
           <h2>COMPOUNDED MEDICINE</h2>
           <p>Our Atria pharmacy professionals are extensively trained to work with your doctor and find a customized medicine that addresses your health challenge, including skin condition, pain management, hormone imbalance and more.</p>
-          <a href="">TALK TO US</a>
+          <a href="#contact">TALK TO US</a>
           <div class="sticker">
             <p>Looking for</p>
           </div>
@@ -138,50 +156,61 @@
         <div class="circleText">
           <h3 class="hoverText">What can we help you with today?</h3>
           <h4 class="hoverText"><i class="fas fa-mouse-pointer"></i>Hover on each topic to learn more</h4>
+          <div class="logo hoverText"><img src="./assets/logo.png" alt=""></div>
           <ul>
-            <li class="top">Side effects to oral tablet</li>
+            <li class="top">Side effects to oral tablet
+              <hr>
+            </li>
             <div class="hide">
               <h3>Side effects to oral tablet</h3>
               <p>Apply pain cream to avoid systemic side effects like stomach irritation or kidney problem</p>
               <a href="">Learn more</a>
             </div>
-            <li class="topRight">Unavailable dosage</li>
+            <li class="topRight"><hr>
+              Unavailable dosage</li>
             <div class="hide">
               <h3>Unavailable dosage</h3>
               <p>Precision dosing e.g. tapering dose on anti-depressants or bio-identical hormones</p>
               <a href="">Learn more</a>
             </div>
-            <li class="right">Allergic to skincare product</li>
+            <li class="right"><hr>
+              Allergic to skincare product</li>
             <div class="hide">
               <h3>Allergic to skincare product</h3>
               <p>Customize cream that is hypoallergic, non-comedogenic, non-irritating, odour-free</p>
               <a href="">Learn more</a>
             </div>
-            <li class="bottomRight"> Medication unavailable</li>
+            <li class="bottomRight"><hr>
+              Medication unavailable</li>
             <div class="hide">
               <h3>Medication unavailable</h3>
               <p>Source the pure active ingredient and make an alternative medicine.</p>
               <a href="">Learn more</a>
             </div>
-            <li class="bottom">Gluten or lactose intolerance</li>
+            <li class="bottom">
+              <hr>
+              Gluten or lactose intolerance</li>
             <div class="hide">
               <h3>Gluten/lactose intolerance</h3>
               <p>Source the active ingredient and customize in a base without gluten, lactose or sugar.</p>
               <a href="">Learn more</a>
             </div>
-            <li class="bottomLeft">Difficulty swallowing</li>
+            <li class="bottomLeft"><hr>
+              Difficulty swallowing</li>
             <div class="hide">
               <h3>Difficulty swallowing</h3>
               <p>Medication can be made in liquid, sublingual or suppository to solve oral administration issues.</p>
               <a href="">Learn more</a>
             </div>
-            <li class="left">Unpalatable medication</li>
+            <li class="left"><hr>
+              Unpalatable medication</li>
             <div class="hide">
               <h3>Unpalatable medication</h3>
               <p>Flavour can mask bitterness. Strawberry, grape, tutti frutti, chocolate flavours to choose.</p>
               <a href="">Learn more</a>
             </div>
-            <li class=" topLeft">Hormone imbalance</li>
+            <li class=" topLeft"><hr>
+              Hormone imbalance</li>
             <div class="hide">
               <h3>Hormone imbalance</h3>
               <p>Formulate bio-identical hormones to restore body natural hormones level</p>
@@ -191,9 +220,18 @@
           <div class="logo">
             <img src="../assets/logo.png" alt="">
           </div>
-          <!-- items -->
-          
         </div>
+        
+          <!-- items -->
+          <div class="ball ball1"></div>
+          <div class="ball ball2"></div>
+          <div class="ball ball3"></div>
+          <div class="ball ball4"></div>
+          <div class="ball ball5"></div>
+          <div class="ball ball6"></div>
+          <div class="ball ball7"></div>
+          <div class="ball ball8"></div>
+
       </div>
     </div>
 
@@ -275,7 +313,7 @@
     <section class="formMap">
       <div class="wrapper">
         <form action="">
-          <h2>have questions or comments?</h2>
+          <h2 id="contact">have questions or comments?</h2>
           <!-- name -->
           <label for="" class="sr-only">name</label>
           <input type="text" placeholder="name">
@@ -339,6 +377,7 @@
             <li><a href=""><i class="fab fa-twitter"></i></a></li>
           <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
           <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href=""><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
       </div>

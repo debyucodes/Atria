@@ -1,0 +1,236 @@
+.hide {
+  display: none;
+}
+
+.innerCircle {
+  background: $nude;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.theCircle {
+  background: linear-gradient($salmon, $nude, $salmon);
+  border-radius: 50%;
+  padding: 20px;
+  display: inline-block;
+  margin: 0 30%;
+  background-color: $nude;
+  position: relative;
+  top: -200px;
+
+
+  .circleText {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+  }
+
+  .logo {
+    position: relative;
+    top: 50px;
+  }
+
+  h3 {
+    font-family: $secondary;
+    font-style: normal;
+    margin: 100px;
+    width: calc(90% - 200px);
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: none;
+    font-weight: 500;
+  }
+
+  h4 {
+    background: white;
+    font-size: 1rem;
+    font-family: $secondary;
+    position: absolute;
+    text-align: center;
+    margin: 180px 0 50px 0;
+    width: 600px;
+    padding: 10px 0;
+
+    i{
+      margin-right: 10px;
+    }
+  }
+
+
+  ul li {
+    position: absolute;
+    list-style: none;
+    font-size: 1.2rem;
+    min-width: 150px;
+    cursor: pointer;
+  }
+
+  ul h3 {
+    font-size: 1.8rem;
+    width: 250px;
+    margin-left: 85px;
+    margin-bottom: 50px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin: 0 40px 60px 0;
+  }
+
+  a {
+    border: 2px solid $teal;
+    border-radius: 15px;
+    padding: 5px 30px;
+    color: $teal;
+    font-size: 1.2rem;
+    margin-right: 40px;
+  }
+
+  hr {
+    width: 40px;
+    position: absolute;
+  }
+
+  .top {
+    top: -90px;
+    left: 156px;
+
+    hr {
+      transform: rotate(90deg);
+      left: 74px;
+      top: 34px;
+    }
+  }
+
+  .topRight {
+    top: 20px;
+    left: 500px;
+
+    hr {
+      position: absolute;
+      transform: rotate(-20deg);
+      left: -20px;
+      top: 15px;
+    }
+  }
+
+  .right {
+    top: 230px;
+    left: 595px;
+
+    hr {
+      left: -40px;
+    }
+  }
+
+  .bottomRight {
+    bottom: 0;
+    left: 500px;
+
+    hr {
+      transform: rotate(20deg);
+      left: -20px;
+    }
+  }
+
+  .bottom {
+    bottom: -90px;
+    left: 140px;
+
+    hr {
+      transform: rotate(90deg);
+      left: 41%;
+      bottom: 30px;
+    }
+  }
+
+  .bottomLeft {
+    bottom: 0;
+    right: 500px;
+
+    hr {
+      transform: rotate(-20deg);
+      right: -20px;
+    }
+  }
+
+  .left {
+    top: 230px;
+    right: 595px;
+
+    hr {
+      right: -40px;
+    }
+  }
+
+  .topLeft {
+    top: 20px;
+    right: 500px;
+
+    hr {
+      transform: rotate(20deg);
+      right: -20px;
+      top: 15px;
+    }
+  }
+}
+
+// when selected
+.selected {
+  color: red;
+}
+
+// Decorative balls
+.ball {
+  background-color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.ball1 {
+  left: 48.5%;
+  top: 0;
+}
+
+.ball2 {
+  left: 48.5%;
+  bottom: 0;
+}
+
+.ball3 {
+  bottom: 50%;
+  left: 0;
+}
+
+.ball4 {
+  bottom: 50%;
+  right: 0;
+}
+
+.ball5 {
+  top: 14%;
+  left: 14%;
+}
+
+.ball6 {
+  top: 14%;
+  right: 14%;
+}
+
+.ball7 {
+  bottom: 14%;
+  left: 14%;
+}
+
+.ball8 {
+  bottom: 14%;
+  right: 14%;
+}

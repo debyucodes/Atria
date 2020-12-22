@@ -270,6 +270,34 @@ a {
   font-family: "Open Sans", sans-serif;
 }
 
+.menu,
+.secondMenu {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 2000;
+}
+
+.secondMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.secondMenuFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -315,7 +343,15 @@ header .nav a {
   font-size: 1rem;
 }
 
-header .nav li:last-child a {
+header .nav a:hover {
+  color: #1FA091;
+}
+
+header .nav a i {
+  padding-left: 5px;
+}
+
+header .nav .action {
   color: white;
   font-size: 1.3rem;
   padding: 10px 15px;
@@ -750,9 +786,6 @@ footer .footerBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 footer .footerSocial {
@@ -761,6 +794,7 @@ footer .footerSocial {
   display: flex;
   border-right: 2px solid grey;
   justify-self: flex-start;
+  padding-right: 100px;
 }
 
 footer .footerSocial ul {
@@ -778,6 +812,7 @@ footer .footerSocial i {
 footer .footerNav {
   border-right: 2px solid grey;
   margin-left: 0;
+  padding: 0 100px;
 }
 
 footer .footerNav div {
@@ -788,6 +823,7 @@ footer .footerNav div {
 
 footer .footerNav div ul {
   list-style: none;
+  padding: 0 10px;
 }
 
 footer .footerNav p {
@@ -795,13 +831,8 @@ footer .footerNav p {
   line-height: 1.2;
 }
 
-footer .footerNav .footerPartners ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-footer .footerNav .footerPartners ul li {
-  padding-left: none;
+footer .footerPartners {
+  padding-left: 100px;
 }
 
 .disclaimer p {
@@ -809,13 +840,253 @@ footer .footerNav .footerPartners ul li {
   margin: 0;
 }
 
-.aboutMenu,
-.serviceMenu {
+.hide {
   display: none;
+}
+
+.innerCircle {
+  background: #FAF6F2;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.theCircle {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FB575B), color-stop(#FAF6F2), to(#FB575B));
+  background: linear-gradient(#FB575B, #FAF6F2, #FB575B);
+  border-radius: 50%;
+  padding: 20px;
+  display: inline-block;
+  margin: 0 30%;
+  background-color: #FAF6F2;
+  position: relative;
+  top: -200px;
+}
+
+.theCircle .circleText {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 500px;
+  height: 500px;
+}
+
+.theCircle .logo {
+  position: relative;
+  top: 50px;
+}
+
+.theCircle h3 {
+  font-family: "Lora", serif;
+  font-style: normal;
+  margin: 100px;
+  width: calc(90% - 200px);
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: none;
+  font-weight: 500;
+}
+
+.theCircle h4 {
+  background: white;
+  font-size: 1rem;
+  font-family: "Lora", serif;
+  position: absolute;
+  text-align: center;
+  margin: 180px 0 50px 0;
+  width: 600px;
+  padding: 10px 0;
+}
+
+.theCircle h4 i {
+  margin-right: 10px;
+}
+
+.theCircle ul li {
+  position: absolute;
+  list-style: none;
+  font-size: 1.2rem;
+  min-width: 150px;
+  cursor: pointer;
+}
+
+.theCircle ul h3 {
+  font-size: 1.8rem;
+  width: 250px;
+  margin-left: 85px;
+  margin-bottom: 50px;
+}
+
+.theCircle p {
+  font-size: 1.2rem;
+  margin: 0 40px 60px 0;
+}
+
+.theCircle a {
+  border: 2px solid #1FA091;
+  border-radius: 15px;
+  padding: 5px 30px;
+  color: #1FA091;
+  font-size: 1.2rem;
+  margin-right: 40px;
+}
+
+.theCircle hr {
+  width: 40px;
+  position: absolute;
+}
+
+.theCircle .top {
+  top: -90px;
+  left: 156px;
+}
+
+.theCircle .top hr {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  left: 74px;
+  top: 34px;
+}
+
+.theCircle .topRight {
+  top: 20px;
+  left: 500px;
+}
+
+.theCircle .topRight hr {
+  position: absolute;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  left: -20px;
+  top: 15px;
+}
+
+.theCircle .right {
+  top: 230px;
+  left: 595px;
+}
+
+.theCircle .right hr {
+  left: -40px;
+}
+
+.theCircle .bottomRight {
+  bottom: 0;
+  left: 500px;
+}
+
+.theCircle .bottomRight hr {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  left: -20px;
+}
+
+.theCircle .bottom {
+  bottom: -90px;
+  left: 140px;
+}
+
+.theCircle .bottom hr {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  left: 41%;
+  bottom: 30px;
+}
+
+.theCircle .bottomLeft {
+  bottom: 0;
+  right: 500px;
+}
+
+.theCircle .bottomLeft hr {
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  right: -20px;
+}
+
+.theCircle .left {
+  top: 230px;
+  right: 595px;
+}
+
+.theCircle .left hr {
+  right: -40px;
+}
+
+.theCircle .topLeft {
+  top: 20px;
+  right: 500px;
+}
+
+.theCircle .topLeft hr {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  right: -20px;
+  top: 15px;
+}
+
+.selected {
+  color: red;
+}
+
+.ball {
+  background-color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.ball1 {
+  left: 48.5%;
+  top: 0;
+}
+
+.ball2 {
+  left: 48.5%;
+  bottom: 0;
+}
+
+.ball3 {
+  bottom: 50%;
+  left: 0;
+}
+
+.ball4 {
+  bottom: 50%;
+  right: 0;
+}
+
+.ball5 {
+  top: 14%;
+  left: 14%;
+}
+
+.ball6 {
+  top: 14%;
+  right: 14%;
+}
+
+.ball7 {
+  bottom: 14%;
+  left: 14%;
+}
+
+.ball8 {
+  bottom: 14%;
+  right: 14%;
 }
 
 .formMap .wrapper {
@@ -940,144 +1211,6 @@ footer .footerNav .footerPartners ul li {
 
 .about .wrapper aside p {
   font-size: 1rem;
-}
-
-.hide {
-  display: none;
-}
-
-.innerCircle {
-  background: #FAF6F2;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  text-align: center;
-}
-
-.theCircle {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FB575B), color-stop(#FAF6F2), to(#FB575B));
-  background: linear-gradient(#FB575B, #FAF6F2, #FB575B);
-  border-radius: 50%;
-  padding: 20px;
-  display: inline-block;
-  margin: 0 30%;
-  background-color: #FAF6F2;
-  position: relative;
-  top: -200px;
-}
-
-.theCircle .circleText {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 500px;
-  height: 500px;
-}
-
-.theCircle h3 {
-  font-family: "Lora", serif;
-  font-style: normal;
-  margin: 100px;
-  width: calc(90% - 200px);
-  font-size: 1.8rem;
-  text-align: center;
-  text-transform: none;
-  font-weight: 500;
-}
-
-.theCircle h4 {
-  background: white;
-  font-size: 1rem;
-  font-family: "Lora", serif;
-  position: absolute;
-  text-align: center;
-  margin: 180px 0 50px 0;
-  width: 600px;
-  padding: 10px 0;
-}
-
-.theCircle h4 i {
-  margin-right: 10px;
-}
-
-.theCircle ul li {
-  position: absolute;
-  list-style: none;
-  font-size: 1.2rem;
-  min-width: 150px;
-  cursor: pointer;
-}
-
-.theCircle ul h3 {
-  font-size: 1.8rem;
-  width: 250px;
-  margin-left: 85px;
-  margin-bottom: 50px;
-}
-
-.theCircle p {
-  font-size: 1.2rem;
-  margin: 0 40px 60px 0;
-}
-
-.theCircle a {
-  border: 2px solid #1FA091;
-  border-radius: 15px;
-  padding: 5px 30px;
-  color: #1FA091;
-  font-size: 1.2rem;
-  margin-right: 40px;
-}
-
-.theCircle .top {
-  top: -90px;
-  left: 156px;
-}
-
-.theCircle .topRight {
-  top: 30px;
-  left: 500px;
-}
-
-.theCircle .right {
-  top: 230px;
-  left: 595px;
-}
-
-.theCircle .bottomRight {
-  bottom: 0;
-  left: 500px;
-}
-
-.theCircle .bottom {
-  bottom: -90px;
-  left: 140px;
-}
-
-.theCircle .bottomLeft {
-  bottom: 0;
-  right: 500px;
-}
-
-.theCircle .left {
-  top: 230px;
-  right: 595px;
-}
-
-.theCircle .topLeft {
-  top: 30px;
-  right: 500px;
 }
 
 .dermaHero .wrapper {
