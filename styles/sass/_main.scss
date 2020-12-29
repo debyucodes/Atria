@@ -19,6 +19,11 @@ header {
       font-size: 0.8rem;
       font-family: $secondary;
     }
+
+    a {
+      color: black;
+      font-size: 1rem;
+    }
   }
 
   .nav {
@@ -47,6 +52,13 @@ header {
       color: white;
       font-size: 1.3rem;
       padding: 10px 15px;
+
+      &:hover {
+        color: $salmon;
+        background: white;
+        // border: 1px solid $salmon;
+        box-shadow: 0px 0px 0px 2px $salmon inset;
+      }
     }
   }
 }
@@ -106,6 +118,13 @@ header {
     border-radius: 50px;
     font-weight: 700;
     padding: 10px 20px;
+    font-size: 1.2rem;
+
+    &:hover {
+      color: $salmon;
+      background-color: white;
+      box-shadow: 0px 0px 0px 2px $salmon inset;
+    }
   }
 
   i {
@@ -118,26 +137,19 @@ header {
   color: $teal;
   position: absolute;
   margin: 0;
-
-  p {
-    font-family: 'Calligraffitti', cursive;
-    // font-family: 'Bad Script', cursive;
-    padding: 0 20px;
-    margin: 0;
-    font-size: 1.4rem;
-  }
+  transform: scale(0.8);
 }
 
 .stickerOne {
   bottom: 140px;
   right: 550px;
-  transform: rotate(-10deg);
+  transform: rotate(-10deg) scale(0.7);
 }
 
 .stickerTwo {
   bottom: 80px;
   right: 450px;
-  transform: rotate(-10deg);
+  transform: rotate(-10deg) scale(0.7);
 }
 
 .heroImage {
@@ -196,13 +208,14 @@ header {
 
 .featureOne {
   position: relative;
-
+  
   h2 {
-  text-align: center;
-  font-size: 1.8rem;
-  padding: 0 200px;
-  margin-left: 0;
-  text-transform: capitalize;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 0 200px;
+    margin-left: 0;
+    text-transform: capitalize;
+    margin-bottom: 40px;
   }
 
   hr {
@@ -249,7 +262,7 @@ header {
 
       h2 {
         width: 100%;
-        margin: 30px 0 10px 0;
+        margin: 30px 0 20px 0;
       }
 
       p {
@@ -262,6 +275,12 @@ header {
         border: 2px solid $salmon;
         border-radius: 20px;
         padding: 5px 20px;
+        font-size: 1.2rem;
+
+        &:hover {
+          color: white;
+          background-color: $salmon;
+        }
       }
     }
 
@@ -501,8 +520,15 @@ footer {
   }
 }
 
-.disclaimer p {
+.disclaimer {
+  padding: 0 50px;
+
+  p {
   font-size: 0.7rem;
   margin: 0;
+  text-align: justify;
 }
+}
+
+
 
