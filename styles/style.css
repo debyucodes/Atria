@@ -290,6 +290,9 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 3000;
 }
 
 header ul {
@@ -384,6 +387,7 @@ header .nav .action:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  margin-top: 180px;
 }
 
 .heroText {
@@ -629,6 +633,12 @@ h2 {
 .pharmacyServices ul li {
   margin: 0 10px;
   border: 10px solid white;
+  cursor: pointer;
+}
+
+.pharmacyServices ul p {
+  text-align: center;
+  color: black;
 }
 
 .pharmacyServices .imageContainer {
@@ -666,8 +676,8 @@ h2 {
           justify-content: space-between;
 }
 
-.blog .wrapper div {
-  width: 50%;
+.blog .wrapper div:first-of-type {
+  width: 70%;
 }
 
 .blog .wrapper p {
@@ -685,6 +695,13 @@ h2 {
   background-color: #1FA091;
   padding: 10px 25px;
   font-size: 1.1rem;
+}
+
+.blog .wrapper a:hover {
+  background-color: white;
+  color: #1FA091;
+  -webkit-box-shadow: 0px 0px 0px 2px #1FA091 inset;
+          box-shadow: 0px 0px 0px 2px #1FA091 inset;
 }
 
 .bannerTwo ul {
@@ -764,9 +781,20 @@ h2 {
   background: #1FA091;
 }
 
+.subscribe form button:hover {
+  -webkit-box-shadow: 0px 0px 0px 2px #1FA091 inset;
+          box-shadow: 0px 0px 0px 2px #1FA091 inset;
+  color: #1FA091;
+  background-color: white;
+}
+
 footer {
   background-color: black;
   color: white;
+}
+
+footer p {
+  font-size: 1.2rem;
 }
 
 footer h3 {
@@ -783,7 +811,7 @@ footer li {
 }
 
 footer a {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 400;
   text-transform: capitalize;
 }
@@ -800,7 +828,7 @@ footer .footerSocial {
   display: flex;
   border-right: 2px solid grey;
   justify-self: flex-start;
-  padding-right: 100px;
+  padding-right: 50px;
 }
 
 footer .footerSocial ul {
@@ -817,8 +845,7 @@ footer .footerSocial i {
 
 footer .footerNav {
   border-right: 2px solid grey;
-  margin-left: 0;
-  padding: 0 100px;
+  padding: 0 50px;
 }
 
 footer .footerNav div {
@@ -829,20 +856,15 @@ footer .footerNav div {
 
 footer .footerNav div ul {
   list-style: none;
-  padding: 0 10px;
-}
-
-footer .footerNav p {
-  font-size: 1rem;
-  line-height: 1.2;
+  padding: 0 30px 0 0;
 }
 
 footer .footerPartners {
-  padding-left: 100px;
+  padding-left: 50px;
 }
 
 .disclaimer {
-  padding: 0 50px;
+  padding: 0 25px;
 }
 
 .disclaimer p {
@@ -1143,6 +1165,14 @@ footer .footerPartners {
   font-size: 1.3rem;
   padding: 10px 10px;
   margin-top: 20px;
+  cursor: pointer;
+}
+
+.formMap .wrapper form button:hover {
+  color: #FB575B;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 0px 2px #FB575B inset;
+          box-shadow: 0px 0px 0px 2px #FB575B inset;
 }
 
 .formMap .wrapper form textarea {
@@ -1168,6 +1198,7 @@ footer .footerPartners {
   font-size: 1.1rem;
   padding: 0;
   font-weight: 400;
+  margin-right: 20px;
 }
 
 .hours h4 {
@@ -1187,6 +1218,15 @@ footer .footerPartners {
   font-size: 1.1rem;
   margin: 0;
   line-height: 1;
+}
+
+.hours li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .about .wrapper {
