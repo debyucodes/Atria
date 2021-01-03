@@ -37,7 +37,7 @@ header {
     color: black;
 
     li {
-      padding: 30px 30px;
+      padding: 10px 30px;
     }
 
     a {
@@ -73,8 +73,8 @@ header {
 }
 
 .logo {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   // margin-left: 30px;
   margin: 10px 30px;
 }
@@ -87,13 +87,16 @@ header {
 }
 
 // HERO
+main {
+  margin-top: 150px;
+}
+
 .heroOne {
   background-color: white;
   height: 80vh;
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin-top: 180px;
 }
 
 .heroText {
@@ -373,12 +376,14 @@ header {
   }
 
   p {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    padding-bottom: 20px;
   }
 
   div:last-of-type {
     align-self: center;
     text-align: right;
+    margin: 0;
   }
 
   a {

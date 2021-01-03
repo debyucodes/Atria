@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/3e2ecb9775.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Order from Atria</title>
+</head>
+<body>
+  <header>
+    <div class="logoName">
+      <div class="logo">
+        <img src="./assets/Logo_homepage.JPG" alt="Atria Pharmacy logo">
+      </div>
+      <div class="pharmacyName">
+        <img src="./assets/pharmacyname.png" alt="">
+      </div>
+    </div>
+    
+    <nav>
+      <ul class="info">
+        <li>D104-69 Lebovic Avenue, ON</li>
+        <li><a href="mailto:info@atriapharmacy.com">
+          <i class="far fa-envelope"></i></a>
+        </li>
+
+        <li>Tel: 000-000-0000</li>
+        <li>Fax: 000-000-0000</li>
+        <li><i class="fas fa-search"></i></li>
+      </ul>
+      <hr>
+      <ul class="nav">
+        <li class="dropDown">
+          <a href="./about.html">about</a>
+          <ul class="menu">
+            <li><a href="./meetAtria.html">Meet Atria</a></li>
+            <li><a href="./meetPharmacists.html">Meet Our Pharmacists</a></li>
+            <li><a href="./about.html">What is a Compounding Pharmacy</a></li>
+          </ul>
+        </li>
+        <li class="dropDown">
+          <a href="">services</a>
+          <ul class="menu">
+            <li><a href="">Medication Management</a></li>
+            <li><a href="">Transfer Prescription</a></li>
+            <li><a href="">Refill Prescription</a></li>
+            <li><a href="">Lifestyle Clinic</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropDown">
+          <a href="">compounding</a>
+          <ul class="menu">
+            <li><a href="">Dermatology</a></li>
+            <li><a href="">Pain Management</a></li>
+            <li><a href="">Children's Medication</a></li>
+            <li><a href="">Hormone Therapy</a></li>
+            <li><a href="">Sex Health</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#contact">contact</a>
+        </li>
+        <li>
+          <a href="./order.html" class="button action">order prescription</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <ul class="orderProgress">
+        <li><span>1</span>Patient Type</li>
+        <li>------------</li>
+        <li class="selected"><span>2</span>Personal Information</li>
+        <li>------------</li>
+        <li><span>3</span>Order Confirmation</li>
+      </ul>
+      <section class="orderForm">
+        <form action="">
+          <!-- firstname -->
+          <h1>Personal information</h1>
+          <label for="orderFirstName">first name</label>
+          <input type="text" id="orderFirstName">
+          <!-- lastname -->
+          <label for="orderLastName">last name</label>
+          <input type="text" id="orderLastName">
+          <!-- phone num -->
+          <label for="phone">phone</label>
+          <input type="text" id="phone">
+
+          <div class="checkbox">
+            <h4>Please select the one(s) applicable:</h4>
+            <div>
+              <input type="checkbox" id="insured">
+              <label for="refill">Refill my previous prescription</label>
+            </div>
+            <label class="indent" for="quantity">Enter RX number (if more than one, please separate with comma)</label>
+            <input class="indent" type="text" id="quantity" name="quantity" placeholder="eg. 0000000, 1111111, 2222222"> 
+            <div>
+              <input type="checkbox" id="idk">
+              <label for="idk">I have a new prescription</label>
+              <p class="indent">* Please upload an image of your prescription to <a href="mailto:info@atriapharmacy.com">info@atriapharmacy.com</a> after submitting the form.</p>
+            </div>
+          </div>
+
+          
+
+          <button type="submit" id="next">submit</button>
+        </form>
+      </section>
+      
+      <section class="confirmation">
+        <h1>Thank you for ordering your prescription!</h1>
+        <p>You will receive an email confirmation shortly and you will be notified when the medication is ready for pick up or delivery</p>
+        <a href="./index.html" class="button">back to home</a>
+      </section>
+    </div>
+  </main>
+
+<script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+<script src="./script.js"></script>
+</body>

@@ -66,7 +66,7 @@ app.circleHover = () => {
 // Initialize App
 app.init = () => {
   app.menu();
-  app.secondMenu();
+  // app.secondMenu();
   app.next();
   app.sendForm();
   app.circleHover();

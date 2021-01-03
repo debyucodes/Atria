@@ -328,7 +328,7 @@ header .nav {
 }
 
 header .nav li {
-  padding: 30px 30px;
+  padding: 10px 30px;
 }
 
 header .nav a {
@@ -364,8 +364,8 @@ header .nav .action:hover {
 }
 
 .logo {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   margin: 10px 30px;
 }
 
@@ -378,6 +378,10 @@ header .nav .action:hover {
   right: 40px;
 }
 
+main {
+  margin-top: 150px;
+}
+
 .heroOne {
   background-color: white;
   height: 80vh;
@@ -388,7 +392,6 @@ header .nav .action:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  margin-top: 180px;
 }
 
 .heroText {
@@ -682,7 +685,8 @@ h2 {
 }
 
 .blog .wrapper p {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  padding-bottom: 20px;
 }
 
 .blog .wrapper div:last-of-type {
@@ -690,6 +694,7 @@ h2 {
       -ms-grid-row-align: center;
       align-self: center;
   text-align: right;
+  margin: 0;
 }
 
 .blog .wrapper a {
@@ -1390,13 +1395,47 @@ footer .footerPartners {
   width: 40%;
 }
 
-.orderProgress {
+.order {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding: 100px 200px;
+}
+
+.order div {
+  background-color: black;
+  padding: 15px;
+}
+
+.order div a {
+  color: black;
+  padding: 60px 0;
+  border: 20px solid #FAF6F2;
+  background-color: #FAF6F2;
+  border-radius: 20px;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+}
+
+.orderProgress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style: none;
   font-family: "Lora", serif;
   color: grey;
@@ -1406,8 +1445,21 @@ footer .footerPartners {
 
 .orderProgress span {
   border: 2px solid grey;
-  padding: 5px 15px;
+  padding: 5px 10px 2px 10px;
   border-radius: 50%;
+  margin-right: 10px;
+}
+
+.orderProgress li {
+  margin: 0 10px;
+}
+
+.orderProgress .selected {
+  color: #FB575B;
+}
+
+.orderProgress .selected span {
+  background-color: #FB575B;
   color: white;
 }
 
@@ -1437,7 +1489,7 @@ footer .footerPartners {
 }
 
 .orderForm label {
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin: 20px 0 10px 0;
 }
 
@@ -1450,10 +1502,20 @@ footer .footerPartners {
 
 .orderForm button {
   margin-top: 40px;
-  width: 40%;
+  padding: 10px 0;
+  width: 25%;
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+}
+
+.orderForm a {
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-decoration: underline;
 }
 
 .orderDetails {
@@ -1506,6 +1568,20 @@ footer .footerPartners {
 
 .checkbox div {
   padding: 10px 0;
+}
+
+.checkbox label {
+  font-size: 1.2rem;
+}
+
+.checkbox .indent {
+  margin: 0 0 0 20px;
+  font-size: 1rem;
+  text-transform: none;
+}
+
+.checkbox .indent a {
+  font-size: 1rem;
 }
 
 #sendOrder {
