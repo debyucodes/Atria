@@ -35,16 +35,16 @@ app.sendForm = () => {
 // ~~~~~~~~~~~~~~~~~~
 app.menu = () => {
   $('.dropDown').hover(function() {
-    $(this).find('ul').slideToggle();
+    $(this).find('ul').slideToggle(0);
   })
 }
 
-app.secondMenu = () => {
-  $('.secondMenu').hover(function(){
-    console.log('hi');
-    $(this).next('ul').slideToggle();
-  })
-}
+// app.secondMenu = () => {
+//   $('.secondMenu').hover(function(){
+//     console.log('hi');
+//     $(this).next('ul').slideToggle();
+//   })
+// }
 
 // Circle hover function
 
