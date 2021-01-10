@@ -21,14 +21,14 @@ app.next = () => {
 }
 
 // Send form and print confirmation page
-app.sendForm = () => {
-  $('#sendOrder').on('click', function(e){
-    e.preventDefault();
-    $('.orderDetails').hide();
-    // Print confirmation page
-    $('.confirmation').show();
-  })
-}
+// app.sendForm = () => {
+//   $('#sendOrder').on('click', function(e){
+//     e.preventDefault();
+//     $('.orderDetails').hide();
+//     // Print confirmation page
+//     $('.confirmation').show();
+//   })
+// }
 
 // ~~~~~~~~~~~~~~~~~~
 // ~~DROP DOWN MENU~~
@@ -66,9 +66,8 @@ app.circleHover = () => {
 // Initialize App
 app.init = () => {
   app.menu();
-  // app.secondMenu();
-  app.next();
-  app.sendForm();
+  // app.next();
+  // app.sendForm();
   app.circleHover();
 }
 

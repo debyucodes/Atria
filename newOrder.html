@@ -11,15 +11,17 @@
 </head>
 <body>
   <header>
-    <div class="logoName">
-      <div class="logo">
-        <img src="./assets/Logo_homepage.JPG" alt="Atria Pharmacy logo">
+    <a href="./index.html">
+      <div class="logoName">
+        <div class="logo">
+          <img src="./assets/Logo_homepage.JPG" alt="Atria Pharmacy logo">
+        </div>
+        <div class="pharmacyName">
+          <img src="./assets/pharmacyname.png" alt="">
+        </div>
       </div>
-      <div class="pharmacyName">
-        <img src="./assets/pharmacyname.png" alt="">
-      </div>
-    </div>
-    
+    </a>
+  
     <nav>
       <ul class="info">
         <li>D104-69 Lebovic Avenue, ON</li>
@@ -34,7 +36,7 @@
       <hr>
       <ul class="nav">
         <li class="dropDown">
-          <a href="./about.html">about</a>
+          <a href="./about.html">about<i class="fas fa-angle-down"></i></a>
           <ul class="menu">
             <li><a href="./meetAtria.html">Meet Atria</a></li>
             <li><a href="./meetPharmacists.html">Meet Our Pharmacists</a></li>
@@ -42,7 +44,7 @@
           </ul>
         </li>
         <li class="dropDown">
-          <a href="">services</a>
+          <a href="">services<i class="fas fa-angle-down"></i></a>
           <ul class="menu">
             <li><a href="">Medication Management</a></li>
             <li><a href="">Transfer Prescription</a></li>
@@ -52,7 +54,7 @@
         </li>
         
         <li class="dropDown">
-          <a href="">compounding</a>
+          <a href="">compounding<i class="fas fa-angle-down"></i></a>
           <ul class="menu">
             <li><a href="">Dermatology</a></li>
             <li><a href="">Pain Management</a></li>
@@ -82,85 +84,63 @@
         <li><span>3</span>Order Confirmation</li>
       </ul>
       <section class="orderForm">
-        <form action="">
+        <form action="https://formspree.io/f/mrgoravo" method="POST">
           <!-- firstname -->
           <h1>Personal information</h1>
           <label for="orderFirstName">first name</label>
-          <input type="text" id="orderFirstName">
+          <input type="text" id="orderFirstName" name="first-name" required>
           <!-- lastname -->
           <label for="orderLastName">last name</label>
-          <input type="text" id="orderLastName">
+          <input type="text" id="orderLastName" name="last-name" required>
           <!-- address -->
           <label for="orderAddress">address</label>
-          <input type="text" id="orderAddress">
+          <input type="text" id="orderAddress" name="address" required>
           <!-- city -->
           <label for="city">city</label>
-          <input type="text" id="city">
+          <input type="text" id="city" name="city" required>
           <!-- postal code -->
           <label for="postal">postal code</label>
-          <input type="text" id="postal">
+          <input type="text" id="postal" name="postal" required>
           <!-- province -->
           <label for="province">province</label>
           <select name="province" id="province">
-            <option value="ab">alberta</option>
-            <option value="bc">british columbia</option>
-            <option value="mb">manitoba</option>
-            <option value="nb">new brunswick</option>
-            <option value="nl">newfoundland and labrador</option>
-            <option value="ns">nova scotia</option>
-            <option value="on">ontario</option>
-            <option value="pei">prince edward island</option>
-            <option value="qc">quebec</option>
-            <option value="sk">saskatchewan</option>
-            <option value="nt">northwest territories</option>
-            <option value="nu">nunavut</option>
-            <option value="yt">yukon</option>
+            <option value="ab">Alberta</option>
+            <option value="bc">British Columbia</option>
+            <option value="mb">Manitoba</option>
+            <option value="nb">New Brunswick</option>
+            <option value="nl">Newfoundland and Labrador</option>
+            <option value="ns">Nova Scotia</option>
+            <option value="on" selected="selected">Ontario</option>
+            <option value="pei">Prince Edward Island</option>
+            <option value="qc">Quebec</option>
+            <option value="sk">Saskatchewan</option>
+            <option value="nt">Northwest Territories</option>
+            <option value="nu">Nunavut</option>
+            <option value="yt">Yukon</option>
           </select>
           <!-- phone num -->
           <label for="phone">phone</label>
-          <input type="text" id="phone">
+          <input type="text" id="phone" name="phone" required>
           <!-- email -->
           <label for="email">email</label>
-          <input type="text"id="email">
-
-          <div class="checkbox">
-            <h4>Please select the one(s) applicable:</h4>
-            <div>
-              <input type="checkbox" id="insured">
-              <label for="insured">I have prescription drug insurance coverage</label>
-            </div>
-            <div>
-              <input type="checkbox" id="odb">
-              <label for="odb">I am covered by Ontario Drug Benefit</label>
-            </div>
-            <div>
-              <input type="checkbox" id="notInsured">
-              <label for="notInsured">I do not have any coverage</label>
-            </div>
-            <div>
-              <input type="checkbox" id="idk">
-              <label for="idk">I am not sure</label>
-            </div>
-          </div>
+          <input type="text"id="email" name="email" required>
+          <!-- insurance -->
+          <label for="insurance">Please select your insurance option:</label>
+          <select name="insurance" id="insurance">
+            <option value="private">I have private drug insurance plan</option>
+            <option value="gov">I am covered by government drug plan</option>
+            <option value="no-plans">I DO NOT have any drug benefit</option>
+            <option value="both">I am covered by BOTH</option>
+            <option value="not-sure">I am not sure</option>
+          </select>
 
           <p>* Please upload an image of your prescription to 
             <a href="mailto:info@atriapharmacy.com">info@atriapharmacy.com</a> after submitting the form.
           </p>
 
-          <button type="submit" id="next">submit</button>
+          <button type="submit" id="next" value="Send">submit</button>
         </form>
       </section>
-
-      <!-- <section class="orderDetails">
-        <h1>Order Details</h1>
-        <p>Take a picture of your prescription and upload the image below</p>
-        <p>(Please be reminded that we will collect the original prescription upon dispensing)</p>
-        <form action="">
-          <input type="file" id="myFile" name="filename">
-
-        <button type="submit" id="sendOrder">send</button>
-        </form>
-      </section> -->
       
       <section class="confirmation">
         <h1>Thank you for ordering your prescription!</h1>

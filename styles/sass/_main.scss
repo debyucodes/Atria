@@ -204,19 +204,15 @@ main {
     color: $salmon;
     padding: 8px 15px;
     border-radius: 50%;
-    font-family: 'Lora', serif;
+    font-family: $secondary;
     font-size: 1.5rem;
     font-weight: 700;
   }
-
-  .numberOne {
-    padding: 8px 17px;
-  }
-  
 }
 
 .featureOne {
   position: relative;
+  margin-bottom: 50px;
   
   h2 {
     text-align: center;
@@ -229,7 +225,7 @@ main {
 
   hr {
     position: absolute;
-    bottom: 100px;
+    bottom: 45px;
     width: 17vw;
   }
 
@@ -330,12 +326,24 @@ main {
     li {
       margin: 0 10px;
       border: 10px solid white;
-      cursor: pointer;
+
+      img {
+        transition: ease 200ms;
+      }
+
+      img:hover {
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+        transform: translate(-5px);
+      }
     }
 
     p {
       text-align: center;
       color: black;
+      font-size: 1rem;
+      text-transform: none;
     }
   }
 

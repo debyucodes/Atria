@@ -15,7 +15,7 @@
 
 <body>
   <header>
-    <a href="/index.html">
+    <a href="./index.html">
       <div class="logoName">
         <div class="logo">
           <img src="./assets/Logo_homepage.JPG" alt="Atria Pharmacy logo">
@@ -104,6 +104,7 @@
     <!-- FEATURE BANNER -->
     <section class="featureOne">
       <div class="wrapper">
+          <h2>3 Easy Steps to Order Your Prescription ONLINE</h2>
         <ul class="featureOne">
           <li>
             <img src="./assets/Icon1.png" alt="">
@@ -123,7 +124,7 @@
         </ul>
         <hr class="lineOne">
         <hr class="lineTwo">
-        <h2>3 Easy Steps to Order Your Prescription ONLINE</h2>
+        <!-- <h2>3 Easy Steps to Order Your Prescription ONLINE</h2> -->
       </div>
       </div>
     </section>
@@ -239,28 +240,36 @@
         <h2>pharmacy services</h2>
         <ul>
           <li>
-            <div class="imageContainer">
-              <img src="./assets/Image3.jpg" alt="">
-            </div>
-            <p>Compounded medicine to meet your unique need</p>
+            <a href="./about.html">
+              <div class="imageContainer">
+                <img src="./assets/Image3.jpg" alt="">
+              </div>
+              <p>Compounded medicine to meet your unique need</p>
+            </a>
           </li>
           <li>
-            <div class="imageContainer">
-              <img src="./assets/Image4.jpg" alt="">
-            </div>
-            <p>Pharmacist consultation to review your medication</p>
+            <a href="./about.html">
+              <div class="imageContainer">
+                <img src="./assets/Image4.jpg" alt="">
+              </div>
+              <p>Pharmacist consultation to review your medication</p>
+            </a>
           </li>
           <li>
-            <div class="imageContainer">
-              <img src="./assets/Image5.jpg" alt="">
-            </div>
-            <p>Skincare consultation to find a customized cream</p>
+            <a href="">
+              <div class="imageContainer">
+                <img src="./assets/Image5.jpg" alt="">
+              </div>
+              <p>Skincare consultation to find a customized cream</p>
+            </a>
           </li>
           <li>
-            <div class="imageContainer">
-              <img src="./assets/Image6.jpg" alt="">
-            </div>
-            <p>Nutrition consultation to optimize a healthy lifestyle</p>
+            <a href="">
+              <div class="imageContainer">
+                <img src="./assets/Image6.jpg" alt="">
+              </div>
+              <p>Nutrition consultation to optimize a healthy lifestyle</p>
+            </a>
           </li>
         </ul>
       </div>
@@ -308,19 +317,19 @@
 
     <section class="formMap">
       <div class="wrapper">
-        <form action="">
+        <form action="https://formspree.io/f/mjvpjeqz" method="POST">
           <h2 id="contact">have questions or comments?</h2>
           <!-- name -->
           <label for="" class="sr-only">name</label>
-          <input type="text" placeholder="name">
+          <input type="text" placeholder="name" name="name" required>
           <!-- phone number -->
           <label for="" class="sr-only">phone</label>
-          <input type="text" placeholder="phone">
+          <input type="text" placeholder="phone" name="phone" required>
           <!-- email -->
           <label for="" class="sr-only">email</label>
-          <input type="email" placeholder="email">
+          <input type="email" placeholder="email" name="email" required>
           <!-- comment -->
-          <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+          <textarea id="message" cols="30" rows="10" placeholder="Write your message here..." name="message"></textarea>
           <button type="submit">SEND</button>
         </form>
   
@@ -352,9 +361,9 @@
       </section>
 
       <section class="subscribe">
-        <form action="">
+        <form action="https://formspree.io/f/mqkgwdvr" method="POST">
           <h3>Receive the Latest Updates</h3>
-          <input type="email" placeholder="Enter your email">
+          <input type="email" placeholder="Enter your email" name="email" required>
           <button type="submit">SUBSCRIBE</button>
         </form>
       </section>

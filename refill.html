@@ -11,14 +11,16 @@
 </head>
 <body>
   <header>
-    <div class="logoName">
-      <div class="logo">
-        <img src="./assets/Logo_homepage.JPG" alt="Atria Pharmacy logo">
+    <a href="./index.html">
+      <div class="logoName">
+        <div class="logo">
+          <img src="./assets/Logo_homepage.JPG" alt="Atria Pharmacy logo">
+        </div>
+        <div class="pharmacyName">
+          <img src="./assets/pharmacyname.png" alt="">
+        </div>
       </div>
-      <div class="pharmacyName">
-        <img src="./assets/pharmacyname.png" alt="">
-      </div>
-    </div>
+    </a>
     
     <nav>
       <ul class="info">
@@ -34,7 +36,7 @@
       <hr>
       <ul class="nav">
         <li class="dropDown">
-          <a href="./about.html">about</a>
+          <a href="./about.html">about<i class="fas fa-angle-down"></i></a>
           <ul class="menu">
             <li><a href="./meetAtria.html">Meet Atria</a></li>
             <li><a href="./meetPharmacists.html">Meet Our Pharmacists</a></li>
@@ -42,7 +44,7 @@
           </ul>
         </li>
         <li class="dropDown">
-          <a href="">services</a>
+          <a href="">services<i class="fas fa-angle-down"></i></a>
           <ul class="menu">
             <li><a href="">Medication Management</a></li>
             <li><a href="">Transfer Prescription</a></li>
@@ -52,7 +54,7 @@
         </li>
         
         <li class="dropDown">
-          <a href="">compounding</a>
+          <a href="">compounding<i class="fas fa-angle-down"></i></a>
           <ul class="menu">
             <li><a href="">Dermatology</a></li>
             <li><a href="">Pain Management</a></li>
@@ -82,19 +84,19 @@
         <li><span>3</span>Order Confirmation</li>
       </ul>
       <section class="orderForm">
-        <form action="">
+        <form action="https://formspree.io/f/xleoawyr" method="POST">
           <!-- firstname -->
           <h1>Personal information</h1>
           <label for="orderFirstName">first name</label>
-          <input type="text" id="orderFirstName">
+          <input type="text" id="orderFirstName" name="first-name" required>
           <!-- lastname -->
           <label for="orderLastName">last name</label>
-          <input type="text" id="orderLastName">
+          <input type="text" id="orderLastName" name="last-name" required>
           <!-- phone num -->
           <label for="phone">phone</label>
-          <input type="text" id="phone">
+          <input type="text" id="phone" name="phone" required>
 
-          <div class="checkbox">
+          <!-- <div class="checkbox">
             <h4>Please select the one(s) applicable:</h4>
             <div>
               <input type="checkbox" id="insured">
@@ -107,9 +109,18 @@
               <label for="idk">I have a new prescription</label>
               <p class="indent">* Please upload an image of your prescription to <a href="mailto:info@atriapharmacy.com">info@atriapharmacy.com</a> after submitting the form.</p>
             </div>
-          </div>
+          </div> -->
 
-          
+          <label for="new-or-return">Please select the applicable</label>
+          <select name="new-or-return" id="new-or-return">
+            <option value="refill">I want to refill my prescription</option>
+            <option value="new-prescription">I have a NEW prescription</option>
+          </select>
+
+          <label for="RX">Enter RX number (if more than one, please separate with comma)</label>
+          <input class="indent" type="text" id="RX" name="RX" placeholder="eg. 0000000, 1111111, 2222222"> 
+
+          <p class="indent">* For NEW prescriptions, please upload an image of your prescription to <a href="mailto:info@atriapharmacy.com">info@atriapharmacy.com</a> after submitting the form.</p>
 
           <button type="submit" id="next">submit</button>
         </form>

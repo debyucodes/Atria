@@ -261,7 +261,7 @@ h2 {
 
 p {
   font-size: 1.2rem;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   line-height: 1.6;
 }
@@ -313,7 +313,7 @@ header .info {
 header .info li {
   padding: 10px 30px;
   font-size: 0.8rem;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 header .info a {
@@ -512,17 +512,14 @@ h2 {
   color: #FB575B;
   padding: 8px 15px;
   border-radius: 50%;
-  font-family: 'Lora', serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-.featureOne ul .numberOne {
-  padding: 8px 17px;
-}
-
 .featureOne {
   position: relative;
+  margin-bottom: 50px;
 }
 
 .featureOne h2 {
@@ -536,7 +533,7 @@ h2 {
 
 .featureOne hr {
   position: absolute;
-  bottom: 100px;
+  bottom: 45px;
   width: 17vw;
 }
 
@@ -637,12 +634,25 @@ h2 {
 .pharmacyServices ul li {
   margin: 0 10px;
   border: 10px solid white;
-  cursor: pointer;
+}
+
+.pharmacyServices ul li img {
+  -webkit-transition: ease 200ms;
+  transition: ease 200ms;
+}
+
+.pharmacyServices ul li img:hover {
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translate(-5px);
+          transform: translate(-5px);
 }
 
 .pharmacyServices ul p {
   text-align: center;
   color: black;
+  font-size: 1rem;
+  text-transform: none;
 }
 
 .pharmacyServices .imageContainer {
@@ -928,7 +938,7 @@ footer .footerPartners {
 }
 
 .theCircle h3 {
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   margin: 100px;
   width: calc(90% - 200px);
@@ -941,7 +951,7 @@ footer .footerPartners {
 .theCircle h4 {
   background: white;
   font-size: 1rem;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
   position: absolute;
   text-align: center;
   margin: 180px 0 50px 0;
@@ -959,6 +969,7 @@ footer .footerPartners {
   font-size: 1.2rem;
   min-width: 150px;
   cursor: pointer;
+  font-family: "Open Sans", sans-serif;
 }
 
 .theCircle ul h3 {
@@ -989,13 +1000,13 @@ footer .footerPartners {
 
 .theCircle .top {
   top: -90px;
-  left: 156px;
+  left: 140px;
 }
 
 .theCircle .top hr {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  left: 74px;
+  left: 90px;
   top: 34px;
 }
 
@@ -1013,12 +1024,13 @@ footer .footerPartners {
 }
 
 .theCircle .right {
-  top: 230px;
-  left: 550px;
+  top: 218px;
+  left: 570px;
 }
 
 .theCircle .right hr {
-  left: -25px;
+  left: -45px;
+  bottom: 10px;
 }
 
 .theCircle .bottomRight {
@@ -1035,7 +1047,7 @@ footer .footerPartners {
 
 .theCircle .bottom {
   bottom: -90px;
-  left: 140px;
+  left: 125px;
 }
 
 .theCircle .bottom hr {
@@ -1047,7 +1059,7 @@ footer .footerPartners {
 
 .theCircle .bottomLeft {
   bottom: -20px;
-  right: 435px;
+  right: 445px;
 }
 
 .theCircle .bottomLeft hr {
@@ -1058,23 +1070,24 @@ footer .footerPartners {
 }
 
 .theCircle .left {
-  top: 230px;
+  top: 218px;
   right: 550px;
 }
 
 .theCircle .left hr {
   right: -25px;
+  bottom: 10px;
 }
 
 .theCircle .topLeft {
   top: -15px;
-  right: 445px;
+  right: 455px;
 }
 
 .theCircle .topLeft hr {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  right: -5px;
+  right: -13px;
   top: 45px;
 }
 
@@ -1155,7 +1168,7 @@ footer .footerPartners {
 .formMap .wrapper form h2 {
   margin: 0 0 20px 0;
   font-style: normal;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .formMap .wrapper form input,
@@ -1200,7 +1213,7 @@ footer .footerPartners {
 
 .hours ul {
   list-style: none;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
   padding: 0;
   font-weight: 400;
@@ -1208,7 +1221,7 @@ footer .footerPartners {
 }
 
 .hours h4 {
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
 }
 
@@ -1250,7 +1263,7 @@ footer .footerPartners {
 
 .about .wrapper article h1 {
   font-size: 3rem;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 
@@ -1292,13 +1305,13 @@ footer .footerPartners {
 
 .dermaHero .wrapper div:last-child ul {
   list-style: none;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
   padding: 0;
 }
 
 .dermaHero .wrapper h1 {
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 #carousel {
@@ -1316,7 +1329,7 @@ footer .footerPartners {
 
 #carousel h4 {
   font-size: 1.6rem;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 #carousel h5 {
@@ -1328,11 +1341,11 @@ footer .footerPartners {
 
 #carousel p {
   font-size: 1.2rem;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .dermaMain {
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .dermaMain p {
@@ -1437,17 +1450,19 @@ footer .footerPartners {
       -ms-flex-pack: center;
           justify-content: center;
   list-style: none;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
   color: grey;
   font-size: 1.4rem;
   padding: 20px 0;
 }
 
 .orderProgress span {
-  border: 2px solid grey;
-  padding: 5px 10px 2px 10px;
+  border: 3px solid grey;
   border-radius: 50%;
   margin-right: 10px;
+  padding: 8px 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .orderProgress li {
@@ -1461,13 +1476,14 @@ footer .footerPartners {
 .orderProgress .selected span {
   background-color: #FB575B;
   color: white;
+  border: 3px solid #FB575B;
 }
 
 .orderForm {
   background: #FAF6F2;
   margin: 50px auto;
   width: 800px;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .orderForm h1 {
@@ -1523,7 +1539,7 @@ footer .footerPartners {
   background: #FAF6F2;
   margin: 50px auto;
   width: 800px;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
   padding: 50px 100px;
 }
 
@@ -1595,7 +1611,7 @@ footer .footerPartners {
   display: none;
   margin: 0 auto;
   width: 800px;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
 }
 
@@ -1608,7 +1624,7 @@ footer .footerPartners {
 }
 
 .meetPharmacist {
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .meetPharmacist .bio {

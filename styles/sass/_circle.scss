@@ -69,6 +69,7 @@
     font-size: 1.2rem;
     min-width: 150px;
     cursor: pointer;
+    font-family: $secondary;
   }
 
   ul h3 {
@@ -99,11 +100,11 @@
 
   .top {
     top: -90px;
-    left: 156px;
+    left: 140px;
 
     hr {
       transform: rotate(90deg);
-      left: 74px;
+      left: 90px;
       top: 34px;
     }
   }
@@ -121,11 +122,12 @@
   }
 
   .right {
-    top: 230px;
-    left: 550px;
+    top: 218px;
+    left: 570px;
 
     hr {
-      left: -25px;
+      left: -45px;
+      bottom: 10px;
     }
   }
 
@@ -142,7 +144,7 @@
 
   .bottom {
     bottom: -90px;
-    left: 140px;
+    left: 125px;
 
     hr {
       transform: rotate(90deg);
@@ -153,7 +155,7 @@
 
   .bottomLeft {
     bottom: -20px;
-    right: 435px;
+    right: 445px;
 
     hr {
       transform: rotate(-45deg);
@@ -163,21 +165,22 @@
   }
 
   .left {
-    top: 230px;
+    top: 218px;
     right: 550px;
 
     hr {
       right: -25px;
+      bottom: 10px;
     }
   }
 
   .topLeft {
     top: -15px;
-    right: 445px;
+    right: 455px;
 
     hr {
       transform: rotate(45deg);
-      right: -5px;
+      right: -13px;
       top: 45px;
     }
   }
