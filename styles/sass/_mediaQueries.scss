@@ -1,0 +1,179 @@
+@media (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+
+//MOBILE
+@media (max-width: 1000px) {
+  .burger {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  .mobile {
+    display: block;
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      list-style: none;
+
+      li {
+        font-size: 1.5rem;
+      }
+
+      a {
+        text-transform: uppercase;
+        padding: 5px 10px;
+      }
+    }
+  }
+
+  .browserNav {
+    display: none;
+  }
+
+  .heroOne {
+    background-color: white;
+    background: url(../assets/hero-image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .heroImage {
+    padding-right: 30px;
+
+    img {
+      border: 2px solid white;
+      margin: 10px;
+    }
+  }
+
+  .featureOne {
+
+    ul {
+      flex-direction: column;
+      margin: 0;
+
+      li { 
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        img {
+          margin: 0 20px;
+        }
+      }
+    }
+    
+    h2 {
+      padding: 10px;
+    }
+  }
+
+  hr {
+    display: none;
+  }
+
+  .featureTwo {
+    margin-bottom: 350px;
+
+    .wrapper {
+      flex-direction: column;
+  
+      .featureImage {
+        width: 80%;
+        margin: 20px auto;
+      }
+  
+      .featureText {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .theCircle,
+  .pharmacyServices,
+  .bannerTwo {
+    display: none;
+  }
+
+  .blog {
+    margin: 0;
+    padding: 0 50px 30px 50px;
+
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    div:first-of-type,
+    div:last-of-type {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  .formMap .wrapper {
+    flex-direction: column;
+    justify-content: center;
+
+    form {
+      width: 100%;
+    }
+
+    .map {
+      margin: 0;
+    }
+  }
+
+  .subscribe form {
+    flex-direction: column;
+
+    input {
+      margin: 10px;
+    }
+  }
+
+  // footer
+  .footerBar {
+    flex-direction: column;
+  }
+
+  .footerNav div {
+    flex-wrap: wrap;
+  }
+
+}
+
+// MOBILE
+@media (max-width: 600px) {
+  .hours {
+    flex-direction: column;
+    align-items: center;
+    
+    div {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    display: none;
+  }
+}

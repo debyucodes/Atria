@@ -7,7 +7,6 @@
   <script src="https://kit.fontawesome.com/3e2ecb9775.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet"> 
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="./styles/style.css">
   <title>Atria Pharmacy</title>
@@ -26,13 +25,12 @@
       </div>
     </a>
 
-    <nav>
+    <nav class="browserNav">
       <ul class="info">
         <li>D104-69 Lebovic Avenue, ON</li>
         <li><a href="mailto:info@atriapharmacy.com">
           <i class="far fa-envelope"></i></a>
         </li>
-
         <li>Tel: 000-000-0000</li>
         <li>Fax: 000-000-0000</li>
         <li><i class="fas fa-search"></i></li>
@@ -76,28 +74,31 @@
         </li>
       </ul>
     </nav>
+    <!-- <nav class="burger">
+      <i><i class="fas fa-bars"></i></i>
+    </nav> -->
+    </div>
   </header>
 
   <main>
+    <!-- MOBILE ONLY -->
+    <section class="mobile">
+      <ul>
+        <li><i class="fas fa-bars"></i></li>
+        <li><i class="fas fa-phone-alt"></i></li>
+        <li><i class="far fa-envelope"></i></li>
+        <li><i class="fas fa-map-marker-alt"></i></li>
+        <li>
+          <a href="./order.html" class="button">order rx</a>
+        </li>
+      </ul>
+    </section>
     <!-- HERO -->
     <section class="heroOne">
-      <div class="heroText">
-        <h1>Personalized Medicine to Meet Health Needs</h1>
-        <ul>
-          <li><i class="fas fa-square-full"></i>Trusted source of compounded medication</li>
-          <li><i class="fas fa-square-full"></i>Fast turnaround time</li>
-          <li><i class="fas fa-square-full"></i>Convenient online order</li>
-        </ul>
-        <a href="#contact" class="button">speak to a pharmacist</a>
-      </div>
-      <div class="heroImage">
-        <img src="./assets/Homepage1_edited.jpeg" alt="">
-      </div>
-      <div class="stickerOne sticker">
-        <img src="./assets/word1.jpg" alt="">
-      </div>
-      <div class="stickerTwo sticker">
-        <img src="./assets/word2.jpg" alt="">
+      <div>
+        <h1>Personalized Medicine</h1>
+        <p>Unique healthcare solution for everyone</p>
+        <p>Trusted source of compounded medication</p>
       </div>
     </section>
 
@@ -107,24 +108,23 @@
           <h2>3 Easy Steps to Order Your Prescription ONLINE</h2>
         <ul class="featureOne">
           <li>
+            <h3 class="numberOne">1</h3>
             <img src="./assets/Icon1.png" alt="">
             <a href="./order.html"><p>Click here to fill out the form</p></a>
-            <h3 class="numberOne">1</h3>
           </li>
           <li>
+            <h3>2</h3>
             <img src="./assets/Icon2.png" alt="">
             <p>Wait for a confirmation email</p>
-            <h3>2</h3>
           </li>
           <li>
+            <h3>3</h3>
             <img src="./assets/Icon3.png" alt="">
             <p>Arrange for a pick up or delivery</p>
-            <h3>3</h3>
           </li>
         </ul>
         <hr class="lineOne">
         <hr class="lineTwo">
-        <!-- <h2>3 Easy Steps to Order Your Prescription ONLINE</h2> -->
       </div>
       </div>
     </section>
@@ -139,9 +139,6 @@
           <h2>COMPOUNDED MEDICINE</h2>
           <p>Our Atria pharmacy professionals are extensively trained to work with your doctor and find a customized medicine that addresses your health challenge, including skin condition, pain management, hormone imbalance and more.</p>
           <a href="#contact">TALK TO US</a>
-          <div class="sticker">
-            <img src="./assets/word3.jpg" alt="">
-          </div>
         </div>
       </div>
       
@@ -266,7 +263,7 @@
           <li>
             <a href="">
               <div class="imageContainer">
-                <img src="./assets/Image6.jpg" alt="">
+                <img src="./assets/Image6_option2.jpg" alt="">
               </div>
               <p>Nutrition consultation to optimize a healthy lifestyle</p>
             </a>
@@ -335,18 +332,18 @@
   
           <!-- EMBED GOOGLE MAP -->
         <div class="map">
-          <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=69%20Lebovic%20Avenue%2C%20Unit%20D104%2C%20Scarborough%2C%20ON%2C%20M1L%200H2&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a></div><style>.mapouter{position:relative;text-align:right;height:300px;width:500px;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:500px;}</style></div>
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=69%20Lebovic%20Avenue%2C%20Unit%20D104%2C%20Scarborough%2C%20ON%2C%20M1L%200H2&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a></div><style>.mapouter{position:relative;text-align:right;height:300px;width:300px;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:500px;}</style></div>
 
           <div class="hours">
             <div>
               <h4>Hours of Operation</h4>
               <ul>
-                <li><span>Mon</span><p>9:30 AM to 7:00 PM</p></li>
-                <li><span>Tues</span><p> 9:30 AM to 7:00 PM</p></li>
-                <li><span>Wed</span><p>9:30 AM to 7:00 PM</p></li>
-                <li><span>Thurs</span><p>9:30 AM to 7:00 PM</p></li>
-                <li><span>Fri</span><p>9:30 AM to 7:00 PM</p></li>
-                <li><span>Sat</span><p>9:30 AM to 4:00 PM</p></li>
+                <li><span>Mon</span><p>10:00 AM to 6:00 PM</p></li>
+                <li><span>Tues</span><p> 10:00 AM to 6:00 PM</p></li>
+                <li><span>Wed</span><p>10:00 AM to 6:00 PM</p></li>
+                <li><span>Thurs</span><p>10:00 AM to 6:00 PM</p></li>
+                <li><span>Fri</span><p>10:00 AM to 6:00 PM</p></li>
+                <li><span>Sat</span><p>10:00 AM to 4:00 PM</p></li>
                 <li><span>Sun</span><p>closed</p></li>
               </ul>
             </div>
