@@ -7,28 +7,28 @@
   <script src="https://kit.fontawesome.com/3e2ecb9775.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
-  <!-- carousel styling -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css">
-  <title>Pain</title>
+  <title>What is compounding?</title>
 </head>
+
 <body>
   <header>
-    <div class="logoName">
-      <div class="logo">
-        <img src="./assets/Logo_homepage.JPG" alt="Atria Pharmacy logo">
+    <a href="./index.html">
+      <div class="logoName">
+        <div class="logo">
+          <img src="./assets/Logo_homepage.JPG" alt="Atria Pharmacy logo">
+        </div>
+        <div class="pharmacyName">
+          <img src="./assets/pharmacyname.png" alt="">
+        </div>
       </div>
-      <div class="pharmacyName">
-        <img src="./assets/pharmacyname.png" alt="">
-      </div>
-    </div>
-    
-    <nav>
+    </a>
+
+    <nav class="browserNav">
       <ul class="info">
         <li>D104-69 Lebovic Avenue, ON</li>
         <li><a href="mailto:info@atriapharmacy.com">
           <i class="far fa-envelope"></i></a>
         </li>
-
         <li>Tel: 000-000-0000</li>
         <li>Fax: 000-000-0000</li>
         <li><i class="fas fa-search"></i></li>
@@ -36,7 +36,7 @@
       <hr>
       <ul class="nav">
         <li class="dropDown">
-          <a href="./about.html">about</a>
+          <a href="./about.html">about<i class="fas fa-angle-down"></i></a>
           <ul class="menu">
             <li><a href="./meetAtria.html">Meet Atria</a></li>
             <li><a href="./meetPharmacists.html">Meet Our Pharmacists</a></li>
@@ -44,7 +44,7 @@
           </ul>
         </li>
         <li class="dropDown">
-          <a href="">services</a>
+          <a href="">services<i class="fas fa-angle-down"></i></a>
           <ul class="menu">
             <li><a href="">Medication Management</a></li>
             <li><a href="">Transfer Prescription</a></li>
@@ -54,7 +54,7 @@
         </li>
         
         <li class="dropDown">
-          <a href="">compounding</a>
+          <a href="">compounding<i class="fas fa-angle-down"></i></a>
           <ul class="menu">
             <li><a href="">Dermatology</a></li>
             <li><a href="">Pain Management</a></li>
@@ -72,31 +72,25 @@
         </li>
       </ul>
     </nav>
+    <!-- <nav class="burger">
+      <i><i class="fas fa-bars"></i></i>
+    </nav> -->
+    </div>
   </header>
-  
-  <main>
-    <section class="subHero">
-      <div class="wrapper">
-        <div>
-          <img src="./assets/Dermatology1.jpg" alt="">
-        </div>
-        <div>
-          <h1>A New Choice to Manage Your Pain</h1>
-          <p>Whether your pain is resulted from auto-accident, sport injury, age-related musculoskeletal deterioration or shingles or cancer, we can customize a topical cream to help 
-          </p>
-          <ul>
-            <li>Reduce severity of pain</li>
-            <li>Reduce duration of pain</li>
-            <li>Restore your daily activity</li>
-          </ul>
-          <a class="secondaryButton" href="">speak to a pharmacist</a>
-        </div>
-      </div>
-    </section>
 
-    <section>
-      <h2>Advantages of Applying Transdermal Pain Cream</h2>
-      <div class="flexContainer quality wrapper">
+  <main class="quality">
+    <div class="wrapper">
+      <h1>Quality Assurance</h1>
+      <div>
+        <p>Safety and consistency are our priorities. There is no compromise when it comes to health. We are compliant with the guidelines set out by the National Association of Pharmacy Regulatory Authorities (NAPRA) and Ontario College of Pharmacists (OCP). Our compounding specialists and pharmacists are trained by the Professional Compounding Centres of America (PCCA). </p>
+        <p>We are committed to provide a level of services that delivers high quality and safe compounded products consistently that prescribers and patients can depend on. </p>
+      </div>
+      <div class="flexContainer gallery">
+        <img src="./assets/Dermatology9.jpeg" alt="">
+        <img src="./assets/Dermatology9.jpeg" alt="">
+        <img src="./assets/Dermatology1.jpg" alt="">
+      </div>
+      <div class="flexContainer">
         <ul>
           <li><i class="far fa-check-circle"></i>Quality assurance and quality control standards to fulfil requirement</li>
           <li><i class="far fa-check-circle"></i>Use only USP and NF equivalent pharmaceutical-graded chemicals for compounding
@@ -113,14 +107,8 @@
           </li>
         </ul>
       </div>
-    </section>
-
-    <section class="beigeBox">
-      <h2>Manage Your Pain Now</h2>
-      <p>We have a comprehensive list of drugs that your doctor can prescribe to help ease your pain. </p>
-      <p>We source the highest quality cream base to ensure the drugs are delivered transdermally to the target muscle or joint tissue. These proprietary base cream aren't tacky or oily, and can spread easily on the skin. </p>
-      <a href="../contact/contact.html">Talk to us now</a>
-    </section>
-
+    </div>
   </main>
 </body>
+
+</html>

@@ -1,4 +1,4 @@
-.dermaHero .wrapper{
+.subHero .wrapper{
   display: flex;
 
   div:first-child {
@@ -53,14 +53,15 @@
 
 }
 
-.dermaMain {
+.subMain {
   font-family: $secondary;
+  font-size: 15px;
 
   p {
     margin-right: 40%;
   }
 
-  .dermaMainFlex {
+  .subMainFlex {
     display: flex;
     
     ul {
@@ -89,7 +90,7 @@
   }
 }
 
-.dermaPinkBox {
+.beigeBox {
   text-align: center;
   background-color: $nude;
   margin: 100px;

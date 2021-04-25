@@ -1238,32 +1238,103 @@ footer .footerPartners {
   font-style: italic;
 }
 
-.dermaHero .wrapper {
+.flexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.dermaHero .wrapper div:first-child {
+.flexContainer div {
+  width: 70%;
+}
+
+.flexContainer img {
+  width: 40%;
+}
+
+.flexContainer ul {
+  list-style: none;
+}
+
+.compSolutions {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  list-style: none;
+}
+
+.compSolutions h3 {
+  font-size: 2.5em;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.compSolutions li {
+  padding: 2px;
+}
+
+.compSolutions .button {
+  position: relative;
+  left: 100px;
+}
+
+.gallery {
+  margin-left: 200px;
+}
+
+.gallery img {
+  width: 40%;
+  padding: 30px;
+}
+
+.quality ul {
+  margin: 0 auto;
+  font-size: 30px;
+  width: 50%;
+}
+
+.quality ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px 0;
+}
+
+.quality ul i {
+  margin-right: 10px;
+  font-size: 1.5em;
+}
+
+.subHero .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subHero .wrapper div:first-child {
   width: 40%;
   -webkit-box-shadow: -30px 30px 0 0 #FAF6F2;
           box-shadow: -30px 30px 0 0 #FAF6F2;
   margin: 100px;
 }
 
-.dermaHero .wrapper div:last-child {
+.subHero .wrapper div:last-child {
   width: 60%;
   margin-top: 100px;
 }
 
-.dermaHero .wrapper div:last-child ul {
+.subHero .wrapper div:last-child ul {
   list-style: none;
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
   padding: 0;
 }
 
-.dermaHero .wrapper h1 {
+.subHero .wrapper h1 {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -1297,57 +1368,58 @@ footer .footerPartners {
   font-family: "Open Sans", sans-serif;
 }
 
-.dermaMain {
+.subMain {
   font-family: "Open Sans", sans-serif;
+  font-size: 15px;
 }
 
-.dermaMain p {
+.subMain p {
   margin-right: 40%;
 }
 
-.dermaMain .dermaMainFlex {
+.subMain .subMainFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.dermaMain .dermaMainFlex ul {
+.subMain .subMainFlex ul {
   width: 40%;
   font-size: 1.2rem;
   line-height: 0.5;
 }
 
-.dermaMain .dermaMainFlex ul p {
+.subMain .subMainFlex ul p {
   font-size: 1rem;
   margin-left: 10px;
 }
 
-.dermaMain .dermaMainFlex ul h5 {
+.subMain .subMainFlex ul h5 {
   margin-left: 10px;
 }
 
-.dermaMain .dermaMainFlex div {
+.subMain .subMainFlex div {
   width: 60%;
   padding: 50px 100px;
 }
 
-.dermaMain .dermaMainFlex img {
+.subMain .subMainFlex img {
   -webkit-box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.75);
 }
 
-.dermaPinkBox {
+.beigeBox {
   text-align: center;
   background-color: #FAF6F2;
   margin: 100px;
   padding: 20px 100px;
 }
 
-.dermaPinkBox h2 {
+.beigeBox h2 {
   color: black;
 }
 
-.dermaPinkBox a {
+.beigeBox a {
   background-color: #1FA091;
   padding: 10px 20px;
   border-radius: 5px;

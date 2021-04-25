@@ -40,3 +40,67 @@
 }
 
 
+.flexContainer {
+  display: flex;
+
+  div {
+    width: 70%;
+  }
+
+  img {
+    width: 40%;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
+.compSolutions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  list-style: none;
+
+  h3 {
+    font-size: 2.5em;
+    font-weight: 800;
+    text-transform: capitalize;
+  }
+
+  li {
+    padding: 2px;
+  }
+
+  .button {
+    position: relative;
+    left: 100px;
+  }
+}
+
+.gallery {
+  margin-left: 200px;
+
+  img {
+    width: 40%;
+    padding: 30px;
+  }
+}
+
+.quality ul {
+  margin: 0 auto;
+  font-size: 30px;
+  width: 50%;
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+  }
+
+  i {
+    margin-right: 10px;
+    font-size: 1.5em;
+  }
+}
+
+
