@@ -1311,6 +1311,15 @@ footer .footerPartners {
   font-size: 1.5em;
 }
 
+.whatIs {
+  margin-top: 150px;
+}
+
+.whatIs h2 {
+  color: #1FA091;
+  margin: 0;
+}
+
 .subHero .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1379,6 +1388,10 @@ footer .footerPartners {
   margin-right: 40%;
 }
 
+.subMain ul {
+  list-style: square;
+}
+
 .subMain .subMainFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1433,6 +1446,27 @@ footer .footerPartners {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1rem;
   width: 40%;
+}
+
+.compound {
+  font-size: 15px;
+  margin-top: 100px;
+}
+
+.compound h2 {
+  color: #1FA091;
+  font-weight: 800;
+  margin: 25px 0;
+}
+
+.compound h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.compound ul {
+  list-style: url(../assets/checkmark.svg);
+  font-size: 50px;
 }
 
 .order {

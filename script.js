@@ -55,9 +55,6 @@ app.circleHover = () => {
     $(this).next('.hide').fadeIn(400);
     // $(this).css('color', 'red');
   }
-  // , function() {
-  //   $(this).css('color', 'black');
-  // }
   )
 
 }

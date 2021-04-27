@@ -61,6 +61,10 @@
     margin-right: 40%;
   }
 
+  ul {
+    list-style: square;
+  }
+
   .subMainFlex {
     display: flex;
     
@@ -115,4 +119,25 @@
   width: 40%;
 }
 
+
+.compound {
+  font-size: 15px;
+  margin-top: 100px;
+
+  h2 {
+    color: $teal;
+    font-weight: 800;
+    margin: 25px 0;
+  }
+  
+  h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+
+  ul {
+    list-style: url(../assets/checkmark.svg);
+    font-size: 50px;
+  }
+}
 
