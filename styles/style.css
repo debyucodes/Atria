@@ -1320,6 +1320,37 @@ footer .footerPartners {
   margin: 0;
 }
 
+.gutHealth {
+  background-image: url("../assets/Rectal1.jpg");
+}
+
+.hormone {
+  background-image: url("../assets/Hormone1.jpeg");
+}
+
+.heroAbout {
+  margin-top: 10%;
+  height: 90vh;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.heroAbout div {
+  width: 60%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.heroAbout .button {
+  display: inline-block;
+}
+
 .subHero .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

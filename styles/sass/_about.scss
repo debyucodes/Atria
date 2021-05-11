@@ -112,4 +112,32 @@
   }
 }
 
+// gut health 
+.gutHealth {
+  background-image: url('../assets/Rectal1.jpg');
+}
+
+.hormone {
+  background-image: url('../assets/Hormone1.jpeg');
+}
+
+.heroAbout {
+  margin-top: 10%;
+  height: 90vh;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+
+  div {
+    width: 60%;
+    align-self: center;
+  }
+
+  .button {
+    display: inline-block;
+  }
+}
+
+
+
 
