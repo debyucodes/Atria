@@ -34,11 +34,20 @@
   }
 }
 
+.aboutUs {
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  hr {
+    margin-bottom: 30px;
+  }
+}
+
 .quote {
   font-size: 2rem;
   font-style: italic;
 }
-
 
 .flexContainer {
   display: flex;
@@ -62,26 +71,46 @@
   list-style: none;
 
   h3 {
-    font-size: 2.5em;
+    font-size: 20px;
     font-weight: 800;
     text-transform: capitalize;
+    margin-top: 0;
+  }
+
+  div {
+    padding: 60px 0;
+  }
+
+  ul {
+    padding: 0;
+    margin-top: 0;
   }
 
   li {
-    padding: 2px;
+    list-style: none;
+    padding-bottom: 20px;
   }
 
   .button {
     position: relative;
     left: 100px;
   }
+
+  img {
+    margin: 0 auto;
+    padding: 60px;
+  }
+
+  p {
+    margin: 0;
+  }
 }
 
 .gallery {
-  margin-left: 200px;
-
+  margin: 20px;
+  
   img {
-    width: 40%;
+    width: 33%;
     padding: 30px;
   }
 }
@@ -104,11 +133,27 @@
 }
 
 .whatIs {
-  margin-top: 150px;
+  margin-bottom: 40px;
+  ul {
+    list-style: square;
+    font-size: 20px;
+  }
 
   h2 {
-    color: $teal;
+    margin-left: 0;
+  }
+
+  .lowerDiv {
+    margin: 60px 0;
+  }
+
+  img,
+  div {
     margin: 0;
+  }
+
+  p {
+    margin-top: 0;
   }
 }
 

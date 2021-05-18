@@ -243,16 +243,18 @@ html {
 
 h1 {
   font-size: 3.8rem;
+  font-family: "Open Sans", sans-serif;
 }
 
 h3 {
   font-size: 2rem;
   text-transform: uppercase;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 100;
 }
 
 h2 {
+  font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   margin-left: 80px;
   text-transform: capitalize;
@@ -409,12 +411,13 @@ main {
 }
 
 .heroOne div {
-  background: #FAF6F2;
+  background: rgba(250, 246, 242, 0.8);
   padding: 50px;
-  opacity: 0.8;
   width: 50%;
   margin-left: 100px;
   text-align: center;
+  position: relative;
+  bottom: 20px;
 }
 
 .heroOne h1 {
@@ -426,6 +429,12 @@ main {
 .heroOne p {
   font-size: 1.5rem;
   margin: 0;
+}
+
+.heroOne .contactBtn {
+  position: relative;
+  top: 60px;
+  background: #1FA091;
 }
 
 .featureOne ul {
@@ -470,6 +479,10 @@ main {
   font-weight: 700;
 }
 
+.featureOne ul p {
+  font-weight: 400;
+}
+
 .featureOne {
   position: relative;
   margin-bottom: 50px;
@@ -486,7 +499,7 @@ main {
 
 .featureOne hr {
   position: absolute;
-  bottom: 45px;
+  bottom: 85px;
   width: 17vw;
 }
 
@@ -538,19 +551,6 @@ main {
   line-height: 1.3;
 }
 
-.featureTwo .wrapper .featureText a {
-  color: #FB575B;
-  border: 2px solid #FB575B;
-  border-radius: 20px;
-  padding: 5px 20px;
-  font-size: 1.2rem;
-}
-
-.featureTwo .wrapper .featureText a:hover {
-  color: white;
-  background-color: #FB575B;
-}
-
 .featureTwo .wrapper .sticker {
   top: 15px;
   left: -45px;
@@ -558,6 +558,22 @@ main {
 
 .featureTwo .wrapper .sticker p {
   padding: 0 20px;
+}
+
+.contactBtn {
+  color: white;
+  background: #1FA091;
+  border: 2px solid #1FA091;
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-size: 1.2rem;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.contactBtn:hover {
+  color: #1FA091;
+  background-color: white;
 }
 
 .pharmacyServices {
@@ -606,6 +622,7 @@ main {
   color: black;
   font-size: 1rem;
   text-transform: none;
+  font-weight: 400;
 }
 
 .pharmacyServices .imageContainer {
@@ -831,7 +848,7 @@ footer .footerPartners {
 }
 
 .disclaimer {
-  padding: 0 25px;
+  padding: 25px;
 }
 
 .disclaimer p {
@@ -1235,6 +1252,14 @@ footer .footerPartners {
   font-size: 1rem;
 }
 
+.aboutUs h1 {
+  margin-bottom: 10px;
+}
+
+.aboutUs hr {
+  margin-bottom: 30px;
+}
+
 .quote {
   font-size: 2rem;
   font-style: italic;
@@ -1267,13 +1292,24 @@ footer .footerPartners {
 }
 
 .compSolutions h3 {
-  font-size: 2.5em;
+  font-size: 20px;
   font-weight: 800;
   text-transform: capitalize;
+  margin-top: 0;
+}
+
+.compSolutions div {
+  padding: 60px 0;
+}
+
+.compSolutions ul {
+  padding: 0;
+  margin-top: 0;
 }
 
 .compSolutions li {
-  padding: 2px;
+  list-style: none;
+  padding-bottom: 20px;
 }
 
 .compSolutions .button {
@@ -1281,12 +1317,21 @@ footer .footerPartners {
   left: 100px;
 }
 
+.compSolutions img {
+  margin: 0 auto;
+  padding: 60px;
+}
+
+.compSolutions p {
+  margin: 0;
+}
+
 .gallery {
-  margin-left: 200px;
+  margin: 20px;
 }
 
 .gallery img {
-  width: 40%;
+  width: 33%;
   padding: 30px;
 }
 
@@ -1312,12 +1357,29 @@ footer .footerPartners {
 }
 
 .whatIs {
-  margin-top: 150px;
+  margin-bottom: 40px;
+}
+
+.whatIs ul {
+  list-style: square;
+  font-size: 20px;
 }
 
 .whatIs h2 {
-  color: #1FA091;
+  margin-left: 0;
+}
+
+.whatIs .lowerDiv {
+  margin: 60px 0;
+}
+
+.whatIs img,
+.whatIs div {
   margin: 0;
+}
+
+.whatIs p {
+  margin-top: 0;
 }
 
 .gutHealth {
@@ -1440,6 +1502,10 @@ footer .footerPartners {
   list-style: square;
 }
 
+.subMain h3 {
+  margin: 0;
+}
+
 .subMain .subMainFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1497,7 +1563,7 @@ footer .footerPartners {
 }
 
 .compound {
-  font-size: 15px;
+  font-size: 20px;
   margin-top: 100px;
 }
 
@@ -1510,6 +1576,10 @@ footer .footerPartners {
 .compound h3 {
   font-size: 20px;
   text-transform: capitalize;
+  font-weight: 300;
+  position: relative;
+  bottom: 10px;
+  text-transform: none;
 }
 
 .compound ul {
@@ -1972,8 +2042,15 @@ button {
   border-radius: 30px;
   color: #1FA091;
   position: relative;
-  left: 350px;
   padding: 10px 20px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  top: 20px;
+}
+
+.secondaryButton:hover {
+  color: white;
+  background: #1FA091;
 }
 
 a {
