@@ -122,14 +122,24 @@
   
   li {
     display: flex;
-    justify-content: space-between;
     margin: 40px 0;
+    font-size: 0.8em;
   }
 
   i {
     margin-right: 10px;
     font-size: 1.5em;
   }
+
+  div,
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.pain {
+  object-fit: cover;
 }
 
 .whatIs {

@@ -24,33 +24,36 @@
   }
 }
 
-#carousel {
-  display: flex;
-  margin: 50px;
-  
-  .card {
-  border: 1px solid white;
-  padding: 70px;
+.dermBanner {
+  margin-top: 150px;
+  margin-bottom: 100px;
   text-align: center;
+
+  h2 {
+    color: teal;
+    margin: 0;
   }
 
-  h4 {
-    font-size: 1.6rem;
-    font-family: $secondary;
-  }
+  div {
+    display: flex;
+    justify-content: space-evenly;
 
-  h5 {
-    font-size: 1.2rem;
-    font-family: $primary;
-    font-weight: 200;
-    font-style: italic;
-  }
+    div {
+      width: 300px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid black;
+      background: $nude;
+    }
 
-  p {
-    font-size: 1.2rem;
-    font-family: $secondary;
+    img {
+      object-fit: contain;
+      width: 60%;
+    }
   }
-
 }
 
 .subMain {
@@ -63,6 +66,11 @@
 
   ul {
     list-style: square;
+  }
+
+  h2 {
+    color: $teal;
+    margin: 0;
   }
 
   h3 {
