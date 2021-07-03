@@ -1937,6 +1937,7 @@ footer .footerPartners {
     padding: 20px;
     margin-left: 5%;
     bottom: 0;
+    display: none;
   }
   .heroOne .contactBtn {
     top: 0;
