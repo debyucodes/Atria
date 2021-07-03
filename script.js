@@ -20,16 +20,6 @@ app.next = () => {
   })
 }
 
-// Send form and print confirmation page
-// app.sendForm = () => {
-//   $('#sendOrder').on('click', function(e){
-//     e.preventDefault();
-//     $('.orderDetails').hide();
-//     // Print confirmation page
-//     $('.confirmation').show();
-//   })
-// }
-
 // ~~~~~~~~~~~~~~~~~~
 // ~~DROP DOWN MENU~~
 // ~~~~~~~~~~~~~~~~~~
@@ -39,12 +29,12 @@ app.menu = () => {
   })
 }
 
-// app.secondMenu = () => {
-//   $('.secondMenu').hover(function(){
-//     console.log('hi');
-//     $(this).next('ul').slideToggle();
-//   })
-// }
+// burger menu
+app.burger = () => {
+  $('#burger').click(function(){
+    $('.mobileMenu').slideToggle();
+  })
+}
 
 // Circle hover function
 
@@ -66,6 +56,7 @@ app.init = () => {
   // app.next();
   // app.sendForm();
   app.circleHover();
+  app.burger();
 }
 
 // Document ready!

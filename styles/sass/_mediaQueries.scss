@@ -33,7 +33,29 @@
       a {
         text-transform: uppercase;
         padding: 5px 10px;
+        color: black;
       }
+
+      .button {
+        color: white;
+      }
+    }
+  }
+
+  .mobileMenu {
+    // display: block;
+    
+    ul {
+      list-style: none;
+    }
+
+    a {
+      color: black;
+    }
+
+    li {
+      padding: 10px 0;
+      border-bottom: 1px solid black;
     }
   }
 
@@ -43,21 +65,26 @@
 
   .heroOne {
     background-color: white;
-    background: url(../assets/hero-image.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    height: 50vh;
+
+    p {
+      display: none;
+    }
 
     h1 {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
-  }
 
-  .heroImage {
-    padding-right: 30px;
+    div {
+      width: 40%;
+      padding: 20px;
+      margin-left: 5%;
+      bottom: 0;
+    }
 
-    img {
-      border: 2px solid white;
-      margin: 10px;
+    .contactBtn {
+      top: 0;
+      font-size: 0.8rem;
     }
   }
 

@@ -393,6 +393,10 @@ header .nav .action:hover {
   right: 40px;
 }
 
+.mobileMenu {
+  display: none;
+}
+
 main {
   margin-top: 150px;
 }
@@ -1900,25 +1904,43 @@ footer .footerPartners {
   .mobile ul a {
     text-transform: uppercase;
     padding: 5px 10px;
+    color: black;
+  }
+  .mobile ul .button {
+    color: white;
+  }
+  .mobileMenu ul {
+    list-style: none;
+  }
+  .mobileMenu a {
+    color: black;
+  }
+  .mobileMenu li {
+    padding: 10px 0;
+    border-bottom: 1px solid black;
   }
   .browserNav {
     display: none;
   }
   .heroOne {
     background-color: white;
-    background: url(../assets/hero-image.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    height: 50vh;
+  }
+  .heroOne p {
+    display: none;
   }
   .heroOne h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
-  .heroImage {
-    padding-right: 30px;
+  .heroOne div {
+    width: 40%;
+    padding: 20px;
+    margin-left: 5%;
+    bottom: 0;
   }
-  .heroImage img {
-    border: 2px solid white;
-    margin: 10px;
+  .heroOne .contactBtn {
+    top: 0;
+    font-size: 0.8rem;
   }
   .featureOne ul {
     -webkit-box-orient: vertical;
