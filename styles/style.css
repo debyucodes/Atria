@@ -2063,12 +2063,6 @@ footer .footerPartners {
   }
 }
 
-@media (max-width: 400px) {
-  .logo {
-    display: none;
-  }
-}
-
 body {
   font-size: 62.5%;
 }
