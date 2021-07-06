@@ -1880,6 +1880,10 @@ footer .footerPartners {
     font-size: 2rem;
     cursor: pointer;
   }
+  .heroOne {
+    background: url(../assets/hero-image-mobile.jpg);
+    background-size: cover;
+  }
   header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
