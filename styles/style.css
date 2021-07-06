@@ -2061,6 +2061,13 @@ footer .footerPartners {
   .hours div {
     width: 100%;
   }
+  iframe {
+    width: 300px;
+    left: 0;
+  }
+  .gmap_canvas {
+    width: 300px !important;
+  }
 }
 
 body {
