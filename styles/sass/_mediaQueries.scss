@@ -16,6 +16,12 @@
   .heroOne {
     background: url(../assets/hero-image-mobile.jpg);
     background-size: cover;
+    height: 50vh;
+    background-position: center;
+
+    div {
+      display: none;
+    }
   }
 
   header {
@@ -68,34 +74,7 @@
     display: none;
   }
 
-  .heroOne {
-    background-color: white;
-    height: 50vh;
-
-    p {
-      display: none;
-    }
-
-    h1 {
-      font-size: 1.5rem;
-    }
-
-    div {
-      width: 40%;
-      padding: 20px;
-      margin-left: 5%;
-      bottom: 0;
-      display: none;
-    }
-
-    .contactBtn {
-      top: 0;
-      font-size: 0.8rem;
-    }
-  }
-
   .featureOne {
-
     ul {
       flex-direction: column;
       margin: 0;
@@ -211,6 +190,12 @@
 
   .gmap_canvas {
     width: 300px !important;
+  }
+
+  .heroOne {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40vh;
   }
 }
 

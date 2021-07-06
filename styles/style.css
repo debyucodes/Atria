@@ -1883,6 +1883,11 @@ footer .footerPartners {
   .heroOne {
     background: url(../assets/hero-image-mobile.jpg);
     background-size: cover;
+    height: 50vh;
+    background-position: center;
+  }
+  .heroOne div {
+    display: none;
   }
   header {
     -webkit-box-pack: center;
@@ -1925,27 +1930,6 @@ footer .footerPartners {
   }
   .browserNav {
     display: none;
-  }
-  .heroOne {
-    background-color: white;
-    height: 50vh;
-  }
-  .heroOne p {
-    display: none;
-  }
-  .heroOne h1 {
-    font-size: 1.5rem;
-  }
-  .heroOne div {
-    width: 40%;
-    padding: 20px;
-    margin-left: 5%;
-    bottom: 0;
-    display: none;
-  }
-  .heroOne .contactBtn {
-    top: 0;
-    font-size: 0.8rem;
   }
   .featureOne ul {
     -webkit-box-orient: vertical;
@@ -2071,6 +2055,11 @@ footer .footerPartners {
   }
   .gmap_canvas {
     width: 300px !important;
+  }
+  .heroOne {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40vh;
   }
 }
 
