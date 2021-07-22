@@ -41,6 +41,7 @@ app.burger = () => {
 app.circleHover = () => {
   $('.circleText').find('li').mouseenter(function(){
     $('.hoverText').addClass('hide');
+    $('circle-logo').hide();
     $('.hide').hide();
     $(this).next('.hide').fadeIn(400);
     // $(this).css('color', 'red');
