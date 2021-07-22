@@ -20,7 +20,23 @@
     background-position: center;
 
     div {
-      display: none;
+      width: 80%;
+      margin: 0 auto;
+      font-size: 1em;
+      bottom: 0px;
+    }
+
+    h1 {
+      padding-bottom: 10px;
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.5em;
+    }
+
+    .contactBtn {
+      top: 20px;
     }
   }
 
@@ -196,6 +212,10 @@
     background-size: contain;
     background-repeat: no-repeat;
     height: 40vh;
+
+    a {
+      font-size: 1.2em;
+    }
   }
 }
 

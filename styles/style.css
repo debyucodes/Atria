@@ -242,7 +242,7 @@ html {
 }
 
 h1 {
-  font-size: 3.8rem;
+  font-size: 3em;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -415,9 +415,9 @@ main {
 }
 
 .heroOne div {
-  background: rgba(250, 246, 242, 0.8);
+  background: rgba(250, 246, 242, 0.9);
   padding: 50px;
-  width: 50%;
+  width: 40%;
   margin-left: 100px;
   text-align: center;
   position: relative;
@@ -427,17 +427,14 @@ main {
 .heroOne h1 {
   margin: 0;
   text-transform: uppercase;
-  padding-bottom: 20px;
 }
 
 .heroOne p {
-  font-size: 1.5rem;
-  margin: 0;
+  font-size: 1.2rem;
+  margin: 30px 0;
 }
 
 .heroOne .contactBtn {
-  position: relative;
-  top: 60px;
   background: #1FA091;
 }
 
@@ -1887,7 +1884,20 @@ footer .footerPartners {
     background-position: center;
   }
   .heroOne div {
-    display: none;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1em;
+    bottom: 0px;
+  }
+  .heroOne h1 {
+    padding-bottom: 10px;
+    font-size: 2em;
+  }
+  .heroOne p {
+    font-size: 1.5em;
+  }
+  .heroOne .contactBtn {
+    top: 20px;
   }
   header {
     -webkit-box-pack: center;
@@ -2060,6 +2070,9 @@ footer .footerPartners {
     background-size: contain;
     background-repeat: no-repeat;
     height: 40vh;
+  }
+  .heroOne a {
+    font-size: 1.2em;
   }
 }
 
