@@ -2074,6 +2074,9 @@ footer .footerPartners {
   .heroOne a {
     font-size: 1.2em;
   }
+  .heroOne div {
+    display: none;
+  }
 }
 
 body {
