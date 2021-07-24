@@ -209,7 +209,7 @@
   }
 
   .heroOne {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 40vh;
 
@@ -220,6 +220,11 @@
     div {
       // display: none;
       background: rgba(250, 246, 242, 0.6);
+      position: abolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 90%;
     }
   }
 }
