@@ -114,14 +114,13 @@
 
   h2 {
     color: black;
+    margin-left: 0;
   }
 
   a {
     background-color: $teal;
     padding: 10px 20px;
     border-radius: 5px;
-    position: relative;
-    top: 30px;
   }
 }
 

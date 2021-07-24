@@ -70,8 +70,6 @@
   }
 
   .mobileMenu {
-    // display: block;
-    
     ul {
       list-style: none;
     }
@@ -186,10 +184,47 @@
     flex-wrap: wrap;
   }
 
+  // compound pages
+  .beigeBox {
+    padding: 20px 40px;
+    width: 90%;
+    margin: 5% auto;
+  }
+
+  .subHero .wrapper {
+    flex-direction: column;
+    width: 80%;
+
+    div:first-child,
+    div:last-child {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .subMain {
+    p {
+      margin: 10px 0;
+    }
+
+    .subMainFlex {
+      flex-direction: column;
+
+      div {
+        width: 100%;
+      }
+    }
+
+    .subMainFlex ul,
+    .fineText {
+      width: 100%;
+    }
+  }
 }
 
 // MOBILE
 @media (max-width: 600px) {
+  // front page
   .hours {
     flex-direction: column;
     align-items: center;
@@ -230,6 +265,28 @@
 
   .subscribe h3 {
     text-align: center;
+  }
+
+  // compounding pages
+  .subMain {
+
+    div,
+    img,
+    p {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .beigeBox {
+    margin: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .subMainFlex,
+  .dermBanner div {
+    align-items: center;
   }
 }
 

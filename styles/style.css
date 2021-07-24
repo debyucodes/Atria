@@ -287,7 +287,7 @@ a {
 }
 
 #burger {
-  padding: 2px 10px 0 10px;
+  padding: 1px 10px 0 10px;
   position: relative;
   left: -1%;
 }
@@ -1577,14 +1577,13 @@ footer .footerPartners {
 
 .beigeBox h2 {
   color: black;
+  margin-left: 0;
 }
 
 .beigeBox a {
   background-color: #1FA091;
   padding: 10px 20px;
   border-radius: 5px;
-  position: relative;
-  top: 30px;
 }
 
 .fineText {
@@ -2044,6 +2043,39 @@ footer .footerPartners {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .beigeBox {
+    padding: 20px 40px;
+    width: 90%;
+    margin: 5% auto;
+  }
+  .subHero .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+  }
+  .subHero .wrapper div:first-child,
+  .subHero .wrapper div:last-child {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .subMain p {
+    margin: 10px 0;
+  }
+  .subMain .subMainFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .subMain .subMainFlex div {
+    width: 100%;
+  }
+  .subMain .subMainFlex ul,
+  .subMain .fineText {
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -2084,6 +2116,23 @@ footer .footerPartners {
   }
   .subscribe h3 {
     text-align: center;
+  }
+  .subMain div,
+  .subMain img,
+  .subMain p {
+    width: 100%;
+    text-align: center;
+  }
+  .beigeBox {
+    margin: 0;
+    width: 100%;
+    padding: 20px;
+  }
+  .subMainFlex,
+  .dermBanner div {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
