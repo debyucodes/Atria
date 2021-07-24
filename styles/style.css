@@ -2117,6 +2117,12 @@ footer .footerPartners {
   .subscribe h3 {
     text-align: center;
   }
+  .subMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .subMain div,
   .subMain img,
   .subMain p {
