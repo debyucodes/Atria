@@ -415,7 +415,7 @@ main {
 }
 
 .heroOne div {
-  background: rgba(250, 246, 242, 0.9);
+  background: rgba(250, 246, 242, 0.8);
   padding: 50px;
   width: 40%;
   margin-left: 100px;
@@ -2075,7 +2075,7 @@ footer .footerPartners {
     font-size: 1.2em;
   }
   .heroOne div {
-    display: none;
+    background: rgba(250, 246, 242, 0.6);
   }
 }
 
