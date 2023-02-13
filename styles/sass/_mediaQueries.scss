@@ -13,31 +13,24 @@
     cursor: pointer;
   }
 
-  .heroOne {
-    background: url(../assets/hero-image-mobile.jpg);
-    background-size: cover;
-    height: 50vh;
-    background-position: center;
-
-    div {
-      width: 80%;
-      margin: 0 auto;
-      font-size: 1em;
-      bottom: 0px;
+  .heroMain {
+    .one .left,
+    .one .right,
+    .three .left,
+    .three .right {display:none;}
+    .one .mid {
+      width: 100%;
+      div {opacity: 1;}
     }
-
-    h1 {
-      padding-bottom: 10px;
-      font-size: 2em;
+    .two .right div {
+      opacity: 1;
+      h2 {font-size: 1.2rem;}
     }
-
-    p {
-      font-size: 1.5em;
+    .three .mid {
+      width: 100%;
+      div {opacity: 1}
     }
-
-    .contactBtn {
-      top: 20px;
-    }
+    
   }
 
   header {
@@ -243,24 +236,13 @@
     width: 300px !important;
   }
 
-  .heroOne {
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 40vh;
-
-    a {
-      font-size: 1.6em;
-    }
-
-    div {
-      // display: none;
-      background: rgba(250, 246, 242, 0.6);
-      position: abolute;
-      top: 0;
-      left: 0;
+  .heroMain {
+    .two .left {display:none;}
+    .two .right {
+      height: 250px;
       width: 100%;
-      height: 90%;
     }
+    .three {height: 500px}
   }
 
   .subscribe h3 {

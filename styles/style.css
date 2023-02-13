@@ -2051,27 +2051,29 @@ footer .footerPartners {
     font-size: 2rem;
     cursor: pointer;
   }
-  .heroOne {
-    background: url(../assets/hero-image-mobile.jpg);
-    background-size: cover;
-    height: 50vh;
-    background-position: center;
+  .heroMain .one .left,
+  .heroMain .one .right,
+  .heroMain .three .left,
+  .heroMain .three .right {
+    display: none;
   }
-  .heroOne div {
-    width: 80%;
-    margin: 0 auto;
-    font-size: 1em;
-    bottom: 0px;
+  .heroMain .one .mid {
+    width: 100%;
   }
-  .heroOne h1 {
-    padding-bottom: 10px;
-    font-size: 2em;
+  .heroMain .one .mid div {
+    opacity: 1;
   }
-  .heroOne p {
-    font-size: 1.5em;
+  .heroMain .two .right div {
+    opacity: 1;
   }
-  .heroOne .contactBtn {
-    top: 20px;
+  .heroMain .two .right div h2 {
+    font-size: 1.2rem;
+  }
+  .heroMain .three .mid {
+    width: 100%;
+  }
+  .heroMain .three .mid div {
+    opacity: 1;
   }
   header {
     -webkit-box-pack: center;
@@ -2273,21 +2275,15 @@ footer .footerPartners {
   .gmap_canvas {
     width: 300px !important;
   }
-  .heroOne {
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 40vh;
+  .heroMain .two .left {
+    display: none;
   }
-  .heroOne a {
-    font-size: 1.6em;
-  }
-  .heroOne div {
-    background: rgba(250, 246, 242, 0.6);
-    position: abolute;
-    top: 0;
-    left: 0;
+  .heroMain .two .right {
+    height: 250px;
     width: 100%;
-    height: 90%;
+  }
+  .heroMain .three {
+    height: 500px;
   }
   .subscribe h3 {
     text-align: center;
