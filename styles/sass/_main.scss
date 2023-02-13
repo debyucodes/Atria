@@ -105,36 +105,194 @@ main {
   margin-top: 150px;
 }
 
-.heroOne {
-  background: url(../assets/hero-image-2.jpg);
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  align-items: center;
+.heroMain {
+  background: #515151;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
 
-  div {
-    background: rgba(250, 246, 242, 0.8);
-    padding: 50px;
-    width: 40%;
-    margin-left: 100px;
-    text-align: center;
-    position: relative;
-    bottom: 20px;
+  .button{
+    transition: .3 ease-in;
+    padding: 10px 50px;
+    border-radius: 50px;
+
+    &:hover {
+      border: 2px solid $salmon;
+      background: white;
+      color: $salmon;
+    }
   }
 
-  h1 {
-    margin: 0;
-    text-transform: uppercase;
+  .one {
+    display: flex;
+    height: 400px;
+    border-top: 2px solid #515151;
+
+    .left {
+      width: 20%;
+      position: relative;
+
+      div {
+        transform: rotate(-90deg);
+        position: absolute;
+        width: 400px;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding: 20% 0;
+      }
+    }
+
+    .mid {
+      width: 50%;
+      background: url('https://lh4.googleusercontent.com/pYbK_ew4mM7WAQMmrURGplmj_4BRtbvS1f130GcIJCj-pi9gKu0CI0VL6J94N-aQljQ=w2400');
+      background-size: cover;
+      background-position: bottom;
+      margin: 2px;
+      position: relative;
+
+      div {
+        background: rgba(81,81,81,0.7);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding: 10%;
+        opacity: 0;
+        transition: .3s ease-in;
+
+        h2 {
+          text-transform: none;
+          margin-bottom: 5%;
+          font-size: 1.5rem;
+          line-height: 1.8;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    .right {
+      width: 30%;
+      background: url('https://lh6.googleusercontent.com/TJjfP3KNYjQXitVxNP8iDXeI6SPo9DccBkGu0V4oQ3MSHwKQGbeAlRRrbL0OstEvF-E=w2400');
+      background-size: cover;
+      margin: 2px;
+    }
   }
 
-  p {
-    font-size: 1.2rem;
-    margin: 30px 0;
+  .two {
+    display: flex;
+
+    .left {
+      width: 50%;
+
+      div {
+        background: #fff;
+        color: #515151;
+        height: auto;
+        margin: 2px;
+        padding: 30px 0;
+        h2 {margin-top: 0;}
+      }
+    }
+
+    .right {
+      background: url('https://lh6.googleusercontent.com/NJl1bRKCP7vBwms1-kf8JrHhSBc_xDA493NPfyUM8tgUlT38-LEoSW7OymAxsd1KAyg=w2400');
+      width: 50%;
+      background-size: cover;
+      margin: 2px;
+      position: relative;
+
+      div {
+        background: rgba(81,81,81,0.7);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding: 3%;
+        opacity: 0;
+        transition: .3s ease-in;
+        h2 {
+          text-transform: none;
+          font-size: 1.5rem;
+          margin-bottom: 5%;
+          line-height: 1.8;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
   }
 
-  .contactBtn {
-    background: $teal;
+  .three {
+    display: flex;
+    height: 400px;
+    border-bottom: 2px solid #515151;
+
+    .left {
+      width: 30%;
+      background: url('https://lh4.googleusercontent.com/c9bZFsWi9czhwPAyvTj4QfdfPT_8mF39fbko0yCyXKT-r3h0-jCJJaFoQHNDKRrEOnk=w2400');
+      margin: 2px;
+    }
+
+    .mid {
+      width: 50%;
+      background: url('https://lh3.googleusercontent.com/iNLcc8u_FebuyCm_5G6Vo4nutWltH7BBDjOF3PaIaqQbrAKY6XbjyAsyV48kGMs5nH4=w2400');
+      background-size: cover;
+      margin: 2px;
+      position: relative;
+
+      div {
+        background: rgba(81,81,81,0.7);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding: 10%;
+        opacity: 0;
+        transition: .3s ease-in;
+        h2 {
+          text-transform: none;
+          font-size: 1.5rem;
+          margin-bottom: 5%;
+          line-height: 1.8;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    .right {
+      width: 20%;
+      position: relative;
+      
+      div {
+        transform: rotate(-90deg);
+        position: absolute;
+        width: 400px;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding: 20% 0;
+      }
+    }
   }
 }
 
